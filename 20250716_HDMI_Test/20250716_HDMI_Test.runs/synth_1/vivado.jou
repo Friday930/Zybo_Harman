@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Jul 16 09:59:37 2025
-# Process ID: 16972
+# Start of session at: Wed Jul 16 11:56:27 2025
+# Process ID: 12504
 # Current directory: C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.runs/synth_1
 # Command line: vivado.exe -log OV7670_HDMI_Display.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source OV7670_HDMI_Display.tcl
 # Log file: C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.runs/synth_1/OV7670_HDMI_Display.vds

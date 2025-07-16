@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Wed Jul 16 10:00:07 2025
+| Date         : Wed Jul 16 11:56:52 2025
 | Host         : DESKTOP-7CFQ9ND running 64-bit major release  (build 9200)
 | Command      : report_utilization -file OV7670_HDMI_Display_utilization_synth.rpt -pb OV7670_HDMI_Display_utilization_synth.pb
 | Design       : OV7670_HDMI_Display
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  143 |     0 |     53200 |  0.27 |
-|   LUT as Logic          |  143 |     0 |     53200 |  0.27 |
+| Slice LUTs*             |  188 |     0 |     53200 |  0.35 |
+|   LUT as Logic          |  188 |     0 |     53200 |  0.35 |
 |   LUT as Memory         |    0 |     0 |     17400 |  0.00 |
-| Slice Registers         |   71 |     0 |    106400 |  0.07 |
-|   Register as Flip Flop |   71 |     0 |    106400 |  0.07 |
+| Slice Registers         |  115 |     0 |    106400 |  0.11 |
+|   Register as Flip Flop |  115 |     0 |    106400 |  0.11 |
 |   Register as Latch     |    0 |     0 |    106400 |  0.00 |
 | F7 Muxes                |    0 |     0 |     26600 |  0.00 |
 | F8 Muxes                |    0 |     0 |     13300 |  0.00 |
@@ -55,9 +55,9 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
-| 69    |          Yes |           - |        Reset |
-| 0     |          Yes |         Set |            - |
-| 2     |          Yes |       Reset |            - |
+| 74    |          Yes |           - |        Reset |
+| 8     |          Yes |         Set |            - |
+| 33    |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -92,7 +92,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   42 |     0 |       125 | 33.60 |
+| Bonded IOB                  |   22 |     0 |       125 | 17.60 |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | Bonded IOPADs               |    0 |     0 |       130 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         4 |  0.00 |
@@ -148,19 +148,20 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT2     |   71 |                 LUT |
-| FDCE     |   69 |        Flop & Latch |
+| LUT2     |   75 |                 LUT |
+| FDCE     |   74 |        Flop & Latch |
+| LUT6     |   58 |                 LUT |
 | RAMB36E1 |   48 |        Block Memory |
-| OBUF     |   29 |                  IO |
-| LUT5     |   28 |                 LUT |
-| LUT3     |   24 |                 LUT |
-| LUT6     |   21 |                 LUT |
+| LUT3     |   36 |                 LUT |
+| FDRE     |   33 |        Flop & Latch |
+| LUT4     |   21 |                 LUT |
+| LUT5     |   19 |                 LUT |
 | IBUF     |   13 |                  IO |
-| LUT4     |   12 |                 LUT |
+| OBUF     |    9 |                  IO |
+| LUT1     |    8 |                 LUT |
+| FDSE     |    8 |        Flop & Latch |
 | CARRY4   |    6 |          CarryLogic |
-| LUT1     |    5 |                 LUT |
 | BUFG     |    3 |               Clock |
-| FDRE     |    2 |        Flop & Latch |
 | DSP48E1  |    1 |    Block Arithmetic |
 +----------+------+---------------------+
 

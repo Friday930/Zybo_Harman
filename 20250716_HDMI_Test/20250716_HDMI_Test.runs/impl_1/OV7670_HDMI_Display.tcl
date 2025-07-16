@@ -115,6 +115,8 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -123,6 +125,7 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 4
+  set_param synth.incrementalSynthesisCache C:/Users/kccistc/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-20996-DESKTOP-7CFQ9ND/incrSyn
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7z020clg400-1
   set_property board_part_repo_paths {C:/Users/kccistc/AppData/Roaming/Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store} [current_project]
@@ -139,7 +142,7 @@ OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.runs/synth_1/OV7670_HDMI_Display.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.srcs/constrs_1/new/hdmi_constraints.xdc
+  read_xdc C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.srcs/constrs_1/imports/Zybo_Harman/Zybo-Z7-Master.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
