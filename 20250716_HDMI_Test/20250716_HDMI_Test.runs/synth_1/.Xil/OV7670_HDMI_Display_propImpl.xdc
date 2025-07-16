@@ -10,21 +10,21 @@ set_property -dict { PACKAGE_PIN G17   IOSTANDARD LVCMOS33 } [get_ports { hdmi_t
 set_property src_info {type:XDC file:1 line:89 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN G18   IOSTANDARD LVCMOS33 } [get_ports { hdmi_tx_sda }]; #IO_L16N_T2_35 Sch=hdmi_tx_sda
 set_property src_info {type:XDC file:1 line:90 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN H17   IOSTANDARD TMDS_33     } [get_ports { tmds_clk_n }]; #IO_L13N_T2_MRCC_35 Sch=hdmi_tx_clk_n
+set_property -dict { PACKAGE_PIN H17   IOSTANDARD LVCMOS33     } [get_ports { tmds_clk_n }]; #IO_L13N_T2_MRCC_35 Sch=hdmi_tx_clk_n
 set_property src_info {type:XDC file:1 line:91 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN H16   IOSTANDARD TMDS_33     } [get_ports { tmds_clk_p }]; #IO_L13P_T2_MRCC_35 Sch=hdmi_tx_clk_p
+set_property -dict { PACKAGE_PIN H16   IOSTANDARD LVCMOS33     } [get_ports { tmds_clk_p }]; #IO_L13P_T2_MRCC_35 Sch=hdmi_tx_clk_p
 set_property src_info {type:XDC file:1 line:92 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN D20   IOSTANDARD TMDS_33     } [get_ports { tmds_data_n[0] }]; #IO_L4N_T0_35 Sch=hdmi_tx_n[0]
+set_property -dict { PACKAGE_PIN D20   IOSTANDARD LVCMOS33     } [get_ports { tmds_data_n[0] }]; #IO_L4N_T0_35 Sch=hdmi_tx_n[0]
 set_property src_info {type:XDC file:1 line:93 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN D19   IOSTANDARD TMDS_33     } [get_ports { tmds_data_p[0] }]; #IO_L4P_T0_35 Sch=hdmi_tx_p[0]
+set_property -dict { PACKAGE_PIN D19   IOSTANDARD LVCMOS33     } [get_ports { tmds_data_p[0] }]; #IO_L4P_T0_35 Sch=hdmi_tx_p[0]
 set_property src_info {type:XDC file:1 line:94 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN B20   IOSTANDARD TMDS_33     } [get_ports { tmds_data_n[1] }]; #IO_L1N_T0_AD0N_35 Sch=hdmi_tx_n[1]
+set_property -dict { PACKAGE_PIN B20   IOSTANDARD LVCMOS33     } [get_ports { tmds_data_n[1] }]; #IO_L1N_T0_AD0N_35 Sch=hdmi_tx_n[1]
 set_property src_info {type:XDC file:1 line:95 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN C20   IOSTANDARD TMDS_33     } [get_ports { tmds_data_p[1] }]; #IO_L1P_T0_AD0P_35 Sch=hdmi_tx_p[1]
+set_property -dict { PACKAGE_PIN C20   IOSTANDARD LVCMOS33     } [get_ports { tmds_data_p[1] }]; #IO_L1P_T0_AD0P_35 Sch=hdmi_tx_p[1]
 set_property src_info {type:XDC file:1 line:96 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN A20   IOSTANDARD TMDS_33     } [get_ports { tmds_data_n[2] }]; #IO_L2N_T0_AD8N_35 Sch=hdmi_tx_n[2]
+set_property -dict { PACKAGE_PIN A20   IOSTANDARD LVCMOS33     } [get_ports { tmds_data_n[2] }]; #IO_L2N_T0_AD8N_35 Sch=hdmi_tx_n[2]
 set_property src_info {type:XDC file:1 line:97 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN B19   IOSTANDARD TMDS_33     } [get_ports { tmds_data_p[2] }]; #IO_L2P_T0_AD8P_35 Sch=hdmi_tx_p[2]
+set_property -dict { PACKAGE_PIN B19   IOSTANDARD LVCMOS33     } [get_ports { tmds_data_p[2] }]; #IO_L2P_T0_AD8P_35 Sch=hdmi_tx_p[2]
 set_property src_info {type:XDC file:1 line:100 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN E19   IOSTANDARD LVCMOS33 } [get_ports { hdmi_tx_cec }]; #IO_L5N_T0_AD9N_35 Sch=hdmi_tx_cec
 set_property src_info {type:XDC file:1 line:116 export:INPUT save:INPUT read:READ} [current_design]
@@ -51,5 +51,5 @@ set_property src_info {type:XDC file:1 line:132 export:INPUT save:INPUT read:REA
 set_property -dict { PACKAGE_PIN T12   IOSTANDARD LVCMOS33     } [get_ports { ov7670_data[2] }]; #IO_L2P_T0_34 Sch=jc_p[4]
 set_property src_info {type:XDC file:1 line:133 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN U12   IOSTANDARD LVCMOS33     } [get_ports { ov7670_data[0] }]; #IO_L2N_T0_34 Sch=jc_n[4]
-set_property src_info {type:XDC file:1 line:199 export:INPUT save:INPUT read:READ} [current_design]
+set_property src_info {type:XDC file:1 line:198 export:INPUT save:INPUT read:READ} [current_design]
 set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets ov7670_pclk_IBUF]

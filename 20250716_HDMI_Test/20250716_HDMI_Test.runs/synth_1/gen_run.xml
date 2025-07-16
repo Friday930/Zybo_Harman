@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1752634586">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1752637498">
   <File Type="PA-TCL" Name="OV7670_HDMI_Display.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="OV7670_HDMI_Display_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="OV7670_HDMI_Display_reports.tcl"/>

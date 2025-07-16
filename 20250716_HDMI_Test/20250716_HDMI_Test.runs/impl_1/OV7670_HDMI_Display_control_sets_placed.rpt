@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Wed Jul 16 11:57:23 2025
+| Date         : Wed Jul 16 12:45:56 2025
 | Host         : DESKTOP-7CFQ9ND running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file OV7670_HDMI_Display_control_sets_placed.rpt
 | Design       : OV7670_HDMI_Display
@@ -75,14 +75,14 @@ Table of Contents
 +-----------------------------------+-------------------------------------------+----------------------------------------------------+------------------+----------------+--------------+
 |  clk_IBUF_BUFG                    |                                           |                                                    |                1 |              1 |         1.00 |
 |  hdmi_clk_BUFG                    |                                           |                                                    |                3 |              4 |         1.33 |
-|  clk_IBUF_BUFG                    |                                           | U_HDMI_TMDS_Controller/bit_counter[4]_i_1_n_0      |                2 |              5 |         2.50 |
 |  U_HDMI_TMDS_Controller/clk_25mhz |                                           | U_HDMI_Controller/U_Pix_counter/reset              |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG                    |                                           | U_HDMI_TMDS_Controller/bit_counter[4]_i_1_n_0      |                2 |              5 |         2.50 |
 |  U_HDMI_TMDS_Controller/clk_25mhz |                                           |                                                    |                3 |              6 |         2.00 |
 |  U_HDMI_TMDS_Controller/clk_25mhz |                                           | U_HDMI_Controller/U_Pix_counter/v_counter_reg[9]_0 |                6 |              6 |         1.00 |
+|  U_HDMI_TMDS_Controller/clk_25mhz |                                           | reset_IBUF                                         |                6 |              8 |         1.33 |
 |  ov7670_pclk_IBUF_BUFG            | U_OV7670_MemController/v_counter0         | reset_IBUF                                         |                2 |              8 |         4.00 |
 |  ov7670_pclk_IBUF_BUFG            | U_OV7670_MemController/pix_data[2]        | reset_IBUF                                         |                6 |              8 |         1.33 |
 |  ov7670_pclk_IBUF_BUFG            | U_OV7670_MemController/pix_data[9]        | reset_IBUF                                         |                6 |              8 |         1.33 |
-|  U_HDMI_TMDS_Controller/clk_25mhz |                                           | reset_IBUF                                         |                6 |              8 |         1.33 |
 |  hdmi_clk_BUFG                    |                                           | reset_IBUF                                         |                3 |             10 |         3.33 |
 |  hdmi_clk_BUFG                    | U_HDMI_Controller/U_Pix_counter/v_counter | reset_IBUF                                         |                5 |             10 |         2.00 |
 |  clk_IBUF_BUFG                    |                                           | reset_IBUF                                         |                5 |             14 |         2.80 |
