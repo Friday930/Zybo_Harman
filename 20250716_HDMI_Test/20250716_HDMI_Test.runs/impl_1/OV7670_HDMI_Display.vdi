@@ -1,0 +1,278 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jul 16 10:00:14 2025
+# Process ID: 22028
+# Current directory: C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.runs/impl_1
+# Command line: vivado.exe -log OV7670_HDMI_Display.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source OV7670_HDMI_Display.tcl -notrace
+# Log file: C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.runs/impl_1/OV7670_HDMI_Display.vdi
+# Journal file: C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source OV7670_HDMI_Display.tcl -notrace
+Command: link_design -top OV7670_HDMI_Display -part xc7z020clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1107.488 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 55 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.srcs/constrs_1/new/hdmi_constraints.xdc]
+CRITICAL WARNING: [Common 17-69] Command failed: 'K15' is not a valid site or package pin name. [C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.srcs/constrs_1/new/hdmi_constraints.xdc:14]
+CRITICAL WARNING: [Common 17-69] Command failed: 'M16' is not a valid site or package pin name. [C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.srcs/constrs_1/new/hdmi_constraints.xdc:19]
+CRITICAL WARNING: [Common 17-69] Command failed: 'C19' is not a valid site or package pin name. [C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.srcs/constrs_1/new/hdmi_constraints.xdc:35]
+CRITICAL WARNING: [Common 17-69] Command failed: 'E20' is not a valid site or package pin name. [C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.srcs/constrs_1/new/hdmi_constraints.xdc:44]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Cannot set PACKAGE_PIN property of ports,  port hdmi_green[3] can not be placed on PACKAGE_PIN D18 because the PACKAGE_PIN is occupied by port hdmi_red[0]. Please note that for projects targeting board parts, user LOC constraints cannot override constraints provided with the board. [C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.srcs/constrs_1/new/hdmi_constraints.xdc:45]
+CRITICAL WARNING: [Common 17-69] Command failed: 'F18' is not a valid site or package pin name. [C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.srcs/constrs_1/new/hdmi_constraints.xdc:48]
+CRITICAL WARNING: [Common 17-69] Command failed: 'H19' is not a valid site or package pin name. [C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.srcs/constrs_1/new/hdmi_constraints.xdc:54]
+CRITICAL WARNING: [Common 17-69] Command failed: 'K20' is not a valid site or package pin name. [C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.srcs/constrs_1/new/hdmi_constraints.xdc:57]
+CRITICAL WARNING: [Constraints 18-602] set_input_delay: list contains '1' objects of types '(port)' other than the types '(input port,internal pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.srcs/constrs_1/new/hdmi_constraints.xdc:68]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'ov7670_pclk' is not supported, ignoring it [C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.srcs/constrs_1/new/hdmi_constraints.xdc:68]
+CRITICAL WARNING: [Constraints 18-602] set_input_delay: list contains '1' objects of types '(port)' other than the types '(input port,internal pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed. [C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.srcs/constrs_1/new/hdmi_constraints.xdc:69]
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'ov7670_pclk' is not supported, ignoring it [C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.srcs/constrs_1/new/hdmi_constraints.xdc:69]
+Finished Parsing XDC File [C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.srcs/constrs_1/new/hdmi_constraints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1107.488 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+7 Infos, 2 Warnings, 10 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1107.488 ; gain = 0.000
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.696 . Memory (MB): peak = 1107.488 ; gain = 0.000
+
+Starting Cache Timing Information Task
+CRITICAL WARNING: [Constraints 18-602] set_input_delay: list contains '1' objects of types '(port)' other than the types '(input port,internal pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed.
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'ov7670_pclk' is not supported, ignoring it [C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.srcs/constrs_1/new/hdmi_constraints.xdc:68]
+CRITICAL WARNING: [Constraints 18-602] set_input_delay: list contains '1' objects of types '(port)' other than the types '(input port,internal pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed.
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'ov7670_pclk' is not supported, ignoring it [C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.srcs/constrs_1/new/hdmi_constraints.xdc:69]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: e3e8d9e1
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1460.527 ; gain = 353.039
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 32 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: d310cd17
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1670.875 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 2 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: a09badd3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1670.875 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: ddb3fedf
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 1670.875 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: ddb3fedf
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 1670.875 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: ddb3fedf
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 1670.875 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: ddb3fedf
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 1670.875 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               2  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1670.875 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 8bc812d3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 1670.875 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+CRITICAL WARNING: [Constraints 18-602] set_input_delay: list contains '1' objects of types '(port)' other than the types '(input port,internal pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed.
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'ov7670_pclk' is not supported, ignoring it [C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.srcs/constrs_1/new/hdmi_constraints.xdc:68]
+CRITICAL WARNING: [Constraints 18-602] set_input_delay: list contains '1' objects of types '(port)' other than the types '(input port,internal pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed.
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'ov7670_pclk' is not supported, ignoring it [C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.srcs/constrs_1/new/hdmi_constraints.xdc:69]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 48 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+CRITICAL WARNING: [Constraints 18-602] set_input_delay: list contains '1' objects of types '(port)' other than the types '(input port,internal pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed.
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'ov7670_pclk' is not supported, ignoring it [C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.srcs/constrs_1/new/hdmi_constraints.xdc:68]
+CRITICAL WARNING: [Constraints 18-602] set_input_delay: list contains '1' objects of types '(port)' other than the types '(input port,internal pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed.
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'ov7670_pclk' is not supported, ignoring it [C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.srcs/constrs_1/new/hdmi_constraints.xdc:69]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-201] Structural ODC has moved 16 WE to EN ports
+Number of BRAM Ports augmented: 48 newly gated: 16 Total Ports: 96
+Number of Flops added for Enable Generation: 2
+
+Ending PowerOpt Patch Enables Task | Checksum: 150821791
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.172 . Memory (MB): peak = 1787.406 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 150821791
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1787.406 ; gain = 116.531
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+CRITICAL WARNING: [Constraints 18-602] set_input_delay: list contains '1' objects of types '(port)' other than the types '(input port,internal pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed.
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'ov7670_pclk' is not supported, ignoring it [C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.srcs/constrs_1/new/hdmi_constraints.xdc:68]
+CRITICAL WARNING: [Constraints 18-602] set_input_delay: list contains '1' objects of types '(port)' other than the types '(input port,internal pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed.
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'ov7670_pclk' is not supported, ignoring it [C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.srcs/constrs_1/new/hdmi_constraints.xdc:69]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: c34ce3bf
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 1787.406 ; gain = 0.000
+Ending Final Cleanup Task | Checksum: c34ce3bf
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1787.406 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1787.406 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: c34ce3bf
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1787.406 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+31 Infos, 10 Warnings, 18 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1787.406 ; gain = 679.918
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1787.406 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.runs/impl_1/OV7670_HDMI_Display_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file OV7670_HDMI_Display_drc_opted.rpt -pb OV7670_HDMI_Display_drc_opted.pb -rpx OV7670_HDMI_Display_drc_opted.rpx
+Command: report_drc -file OV7670_HDMI_Display_drc_opted.rpt -pb OV7670_HDMI_Display_drc_opted.pb -rpx OV7670_HDMI_Display_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+CRITICAL WARNING: [Constraints 18-602] set_input_delay: list contains '1' objects of types '(port)' other than the types '(input port,internal pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed.
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'ov7670_pclk' is not supported, ignoring it [C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.srcs/constrs_1/new/hdmi_constraints.xdc:68]
+CRITICAL WARNING: [Constraints 18-602] set_input_delay: list contains '1' objects of types '(port)' other than the types '(input port,internal pin)' supported by the constraint. These objects will not be used for this constraint. Please review the object list and ensure unsupported object types are removed.
+WARNING: [Constraints 18-96] Setting input delay on a clock pin 'ov7670_pclk' is not supported, ignoring it [C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.srcs/constrs_1/new/hdmi_constraints.xdc:69]
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Zybo_Harman/20250716_HDMI_Test/20250716_HDMI_Test.runs/impl_1/OV7670_HDMI_Display_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+CRITICAL WARNING: [DRC IOSTDTYPE-1] IOStandard Type: I/O port hdmi_clk is Single-Ended but has an IOStandard of TMDS_33 which can only support Differential
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U_Frame_Buffer/mem_reg_0_0 has an input control pin U_Frame_Buffer/mem_reg_0_0/ADDRARDADDR[14] (net: U_Frame_Buffer/wAddr[13]) which is driven by a register (U_OV7670_MemController/h_counter_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U_Frame_Buffer/mem_reg_0_0 has an input control pin U_Frame_Buffer/mem_reg_0_0/ADDRARDADDR[14] (net: U_Frame_Buffer/wAddr[13]) which is driven by a register (U_OV7670_MemController/h_counter_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U_Frame_Buffer/mem_reg_0_0 has an input control pin U_Frame_Buffer/mem_reg_0_0/ADDRARDADDR[14] (net: U_Frame_Buffer/wAddr[13]) which is driven by a register (U_OV7670_MemController/h_counter_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U_Frame_Buffer/mem_reg_0_0 has an input control pin U_Frame_Buffer/mem_reg_0_0/ADDRARDADDR[14] (net: U_Frame_Buffer/wAddr[13]) which is driven by a register (U_OV7670_MemController/v_counter_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U_Frame_Buffer/mem_reg_0_0 has an input control pin U_Frame_Buffer/mem_reg_0_0/ADDRARDADDR[14] (net: U_Frame_Buffer/wAddr[13]) which is driven by a register (U_OV7670_MemController/v_counter_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U_Frame_Buffer/mem_reg_0_0 has an input control pin U_Frame_Buffer/mem_reg_0_0/ADDRARDADDR[14] (net: U_Frame_Buffer/wAddr[13]) which is driven by a register (U_OV7670_MemController/v_counter_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U_Frame_Buffer/mem_reg_0_0 has an input control pin U_Frame_Buffer/mem_reg_0_0/ADDRARDADDR[14] (net: U_Frame_Buffer/wAddr[13]) which is driven by a register (U_OV7670_MemController/v_counter_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U_Frame_Buffer/mem_reg_0_0 has an input control pin U_Frame_Buffer/mem_reg_0_0/ADDRARDADDR[14] (net: U_Frame_Buffer/wAddr[13]) which is driven by a register (U_OV7670_MemController/v_counter_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U_Frame_Buffer/mem_reg_0_0 has an input control pin U_Frame_Buffer/mem_reg_0_0/ADDRARDADDR[14] (net: U_Frame_Buffer/wAddr[13]) which is driven by a register (U_OV7670_MemController/v_counter_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U_Frame_Buffer/mem_reg_0_0 has an input control pin U_Frame_Buffer/mem_reg_0_0/ADDRARDADDR[15] (net: U_Frame_Buffer/wAddr[14]) which is driven by a register (U_OV7670_MemController/h_counter_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U_Frame_Buffer/mem_reg_0_0 has an input control pin U_Frame_Buffer/mem_reg_0_0/ADDRARDADDR[15] (net: U_Frame_Buffer/wAddr[14]) which is driven by a register (U_OV7670_MemController/h_counter_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U_Frame_Buffer/mem_reg_0_0 has an input control pin U_Frame_Buffer/mem_reg_0_0/ADDRARDADDR[15] (net: U_Frame_Buffer/wAddr[14]) which is driven by a register (U_OV7670_MemController/h_counter_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U_Frame_Buffer/mem_reg_0_0 has an input control pin U_Frame_Buffer/mem_reg_0_0/ADDRARDADDR[15] (net: U_Frame_Buffer/wAddr[14]) which is driven by a register (U_OV7670_MemController/v_counter_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U_Frame_Buffer/mem_reg_0_0 has an input control pin U_Frame_Buffer/mem_reg_0_0/ADDRARDADDR[15] (net: U_Frame_Buffer/wAddr[14]) which is driven by a register (U_OV7670_MemController/v_counter_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U_Frame_Buffer/mem_reg_0_0 has an input control pin U_Frame_Buffer/mem_reg_0_0/ADDRARDADDR[15] (net: U_Frame_Buffer/wAddr[14]) which is driven by a register (U_OV7670_MemController/v_counter_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U_Frame_Buffer/mem_reg_0_0 has an input control pin U_Frame_Buffer/mem_reg_0_0/ADDRARDADDR[15] (net: U_Frame_Buffer/wAddr[14]) which is driven by a register (U_OV7670_MemController/v_counter_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U_Frame_Buffer/mem_reg_0_0 has an input control pin U_Frame_Buffer/mem_reg_0_0/ADDRARDADDR[15] (net: U_Frame_Buffer/wAddr[14]) which is driven by a register (U_OV7670_MemController/v_counter_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U_Frame_Buffer/mem_reg_0_0 has an input control pin U_Frame_Buffer/mem_reg_0_0/ADDRARDADDR[15] (net: U_Frame_Buffer/wAddr[14]) which is driven by a register (U_OV7670_MemController/v_counter_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U_Frame_Buffer/mem_reg_0_0 has an input control pin U_Frame_Buffer/mem_reg_0_0/ADDRARDADDR[15] (net: U_Frame_Buffer/wAddr[14]) which is driven by a register (U_OV7670_MemController/v_counter_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 U_Frame_Buffer/mem_reg_0_0 has an input control pin U_Frame_Buffer/mem_reg_0_0/ADDRARDADDR[15] (net: U_Frame_Buffer/wAddr[14]) which is driven by a register (U_OV7670_MemController/v_counter_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Critical Warnings, 21 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1787.406 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 68564970
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1787.406 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1787.406 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+WARNING: [Place 30-87] Partially locked IO Bus is found. Following components of the IO Bus hdmi_blue are not locked:  'hdmi_blue[6]'  'hdmi_blue[3]' 
+WARNING: [Place 30-87] Partially locked IO Bus is found. Following components of the IO Bus hdmi_green are not locked:  'hdmi_green[6]'  'hdmi_green[3]'  'hdmi_green[2]' 
+WARNING: [Place 30-87] Partially locked IO Bus is found. Following components of the IO Bus hdmi_red are not locked:  'hdmi_red[2]' 
+WARNING: [Place 30-87] Partially locked IO Bus is found. Following components of the IO Bus ov7670_data are not locked:  'ov7670_data[2]' 
+ERROR: [Place 30-574] Poor placement for routing between an IO pin and BUFG. If this sub optimal condition is acceptable for this design, you may use the CLOCK_DEDICATED_ROUTE constraint in the .xdc file to demote this message to a WARNING. However, the use of this override is highly discouraged. These examples can be used directly in the .xdc file to override this clock rule.
+	< set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets ov7670_pclk_IBUF] >
+
+	ov7670_pclk_IBUF_inst (IBUF.O) is locked to IOB_X1Y112
+	ov7670_pclk_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y31
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 544d6f90
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.523 . Memory (MB): peak = 1787.406 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 544d6f90
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.524 . Memory (MB): peak = 1787.406 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 544d6f90
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.525 . Memory (MB): peak = 1787.406 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+49 Infos, 37 Warnings, 21 Critical Warnings and 3 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 16 10:00:38 2025...
