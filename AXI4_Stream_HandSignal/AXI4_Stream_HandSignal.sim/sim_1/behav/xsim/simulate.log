@@ -1,0 +1,170 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+=== AXI4-Stream HandSignal Test Started ===
+
+--- Test Case 1: Basic Handshake ---
+Time 157000: Input Handshake - Data: 0xff0000, Last: 0, User: 1
+Time 163000: Output Handshake - Data: 0x000000, Last: 0, User: 1, SPI: 0x00000000
+Time 170000: Input Handshake - Data: 0xff0000, Last: 0, User: 0
+Time 176000: Output Handshake - Data: 0xff0000, Last: 0, User: 0, SPI: 0x00000000
+Time 183000: Input Handshake - Data: 0xff0000, Last: 0, User: 0
+Time 190000: Output Handshake - Data: 0xff0000, Last: 0, User: 0, SPI: 0x00000000
+Time 196000: Input Handshake - Data: 0xff0000, Last: 0, User: 0
+Time 203000: Output Handshake - Data: 0xff0000, Last: 0, User: 0, SPI: 0x00000000
+Time 210000: Input Handshake - Data: 0xff0000, Last: 0, User: 0
+Time 216000: Output Handshake - Data: 0xff0000, Last: 0, User: 0, SPI: 0x00000000
+Time 223000: Input Handshake - Data: 0xff0000, Last: 0, User: 0
+Time 230000: Output Handshake - Data: 0xff0000, Last: 0, User: 0, SPI: 0x00000000
+Time 236000: Input Handshake - Data: 0xff0000, Last: 0, User: 0
+Time 243000: Output Handshake - Data: 0xff0000, Last: 0, User: 0, SPI: 0x00000000
+Time 250000: Input Handshake - Data: 0xff0000, Last: 0, User: 0
+Time 256000: Output Handshake - Data: 0xff0000, Last: 0, User: 0, SPI: 0x00000000
+Time 263000: Input Handshake - Data: 0xff0000, Last: 0, User: 0
+Time 270000: Output Handshake - Data: 0xff0000, Last: 0, User: 0, SPI: 0x00000000
+Time 276000: Input Handshake - Data: 0xff0000, Last: 0, User: 0
+Time 283000: Output Handshake - Data: 0xff0000, Last: 0, User: 0, SPI: 0x00000000
+Time 290000: Input Handshake - Data: 0xff0000, Last: 0, User: 0
+Time 296000: Output Handshake - Data: 0xff0000, Last: 0, User: 0, SPI: 0x00000000
+Time 303000: Input Handshake - Data: 0xff0000, Last: 0, User: 0
+Time 310000: Output Handshake - Data: 0xff0000, Last: 0, User: 0, SPI: 0x00000000
+Time 316000: Input Handshake - Data: 0xff0000, Last: 0, User: 0
+Time 323000: Output Handshake - Data: 0xff0000, Last: 0, User: 0, SPI: 0x00000000
+Time 330000: Input Handshake - Data: 0xff0000, Last: 0, User: 0
+Time 336000: Output Handshake - Data: 0xff0000, Last: 0, User: 0, SPI: 0x00000000
+Time 343000: Input Handshake - Data: 0xff0000, Last: 0, User: 0
+Time 350000: Output Handshake - Data: 0xff0000, Last: 0, User: 0, SPI: 0x00000000
+Time 356000: Input Handshake - Data: 0xff0000, Last: 0, User: 0
+Time 363000: Output Handshake - Data: 0xff0000, Last: 0, User: 0, SPI: 0x00000000
+Time 370000: Input Handshake - Data: 0xff0000, Last: 0, User: 0
+Time 376000: Output Handshake - Data: 0xff0000, Last: 0, User: 0, SPI: 0x00000000
+Time 383000: Input Handshake - Data: 0xff0000, Last: 0, User: 0
+Time 390000: Output Handshake - Data: 0xff0000, Last: 0, User: 0, SPI: 0x00000000
+Time 396000: Input Handshake - Data: 0xff0000, Last: 0, User: 0
+Time 403000: Output Handshake - Data: 0xff0000, Last: 0, User: 0, SPI: 0x00000000
+Time 410000: Input Handshake - Data: 0xff0000, Last: 1, User: 0
+Time 416000: Output Handshake - Data: 0xff0000, Last: 1, User: 0, SPI: 0x00000000
+
+--- Test Case 2: Backpressure Test ---
+Time 1489000: Backpressure Test - Data: 0xff0000, m_ready: 0
+Time 1502000: Backpressure Test - Data: 0xff0000, m_ready: 1
+Time 1508000: Output Handshake - Data: 0xff0000, Last: 0, User: 0, SPI: 0x00000000
+Time 1515000: Backpressure Test - Data: 0xff0000, m_ready: 1
+Time 1522000: Output Handshake - Data: 0xff0000, Last: 0, User: 0, SPI: 0x00000000
+Time 1528000: Backpressure Test - Data: 0xff0000, m_ready: 1
+Time 1535000: Output Handshake - Data: 0xff0000, Last: 0, User: 0, SPI: 0x00000000
+Time 1542000: Backpressure Test - Data: 0xff0000, m_ready: 1
+Time 1548000: Output Handshake - Data: 0xff0000, Last: 0, User: 0, SPI: 0x00000000
+Time 1555000: Backpressure Test - Data: 0xff0000, m_ready: 1
+Time 1562000: Output Handshake - Data: 0xff0000, Last: 0, User: 0, SPI: 0x00000000
+Time 1568000: Backpressure Test - Data: 0xff0000, m_ready: 1
+Time 1575000: Output Handshake - Data: 0xff0000, Last: 0, User: 0, SPI: 0x00000000
+Time 1582000: Backpressure Test - Data: 0xff0000, m_ready: 0
+Time 1595000: Backpressure Test - Data: 0xff0000, m_ready: 1
+Time 1602000: Output Handshake - Data: 0xff0000, Last: 0, User: 0, SPI: 0x00000000
+Time 1608000: Backpressure Test - Data: 0xff0000, m_ready: 1
+Time 1615000: Output Handshake - Data: 0xff0000, Last: 0, User: 0, SPI: 0x00000000
+Time 1622000: Backpressure Test - Data: 0x0000ff, m_ready: 0
+Time 1635000: Backpressure Test - Data: 0x0000ff, m_ready: 1
+Time 1642000: Output Handshake - Data: 0x0000ff, Last: 0, User: 0, SPI: 0x00000000
+Time 1648000: Backpressure Test - Data: 0x0000ff, m_ready: 1
+Time 1655000: Output Handshake - Data: 0x0000ff, Last: 0, User: 0, SPI: 0x00000000
+Time 1662000: Backpressure Test - Data: 0x0000ff, m_ready: 0
+Time 1675000: Backpressure Test - Data: 0x0000ff, m_ready: 1
+Time 1682000: Output Handshake - Data: 0x0000ff, Last: 0, User: 0, SPI: 0x00000000
+Time 1688000: Backpressure Test - Data: 0x0000ff, m_ready: 0
+Time 1702000: Backpressure Test - Data: 0x0000ff, m_ready: 1
+Time 1708000: Output Handshake - Data: 0x0000ff, Last: 0, User: 0, SPI: 0x00000000
+Time 1715000: Backpressure Test - Data: 0x0000ff, m_ready: 0
+Time 1728000: Backpressure Test - Data: 0x0000ff, m_ready: 1
+Time 1735000: Output Handshake - Data: 0x0000ff, Last: 0, User: 0, SPI: 0x00000000
+Time 1742000: Backpressure Test - Data: 0x0000ff, m_ready: 1
+Time 1748000: Output Handshake - Data: 0x0000ff, Last: 1, User: 0, SPI: 0x00000000
+
+--- Test Case 3: Burst Transfer Test ---
+Time 2821000: Burst Transfer - Pixel 60: 0x00ff00
+Time 2827000: Burst Transfer - Pixel 61: 0x00ff00
+Time 2827000: Output Handshake - Data: 0x0000ff, Last: 0, User: 1, SPI: 0x00000000
+Time 2834000: Burst Transfer - Pixel 62: 0x00ff00
+Time 2834000: Output Handshake - Data: 0x00ff00, Last: 0, User: 0, SPI: 0x00000000
+Time 2840000: Burst Transfer - Pixel 63: 0x00ff00
+Time 2840000: Output Handshake - Data: 0x00ff00, Last: 0, User: 0, SPI: 0x00000000
+Time 2847000: Burst Transfer - Pixel 64: 0x00ff00
+Time 2847000: Output Handshake - Data: 0x00ff00, Last: 0, User: 0, SPI: 0x00000000
+Time 2854000: Burst Transfer - Pixel 65: 0x00ff00
+Time 2854000: Output Handshake - Data: 0x00ff00, Last: 0, User: 0, SPI: 0x00000000
+Time 2860000: Burst Transfer - Pixel 66: 0x00ff00
+Time 2860000: Output Handshake - Data: 0x00ff00, Last: 0, User: 0, SPI: 0x00000000
+Time 2867000: Burst Transfer - Pixel 67: 0x00ff00
+Time 2867000: Output Handshake - Data: 0x00ff00, Last: 0, User: 0, SPI: 0x00000000
+Time 2874000: Burst Transfer - Pixel 68: 0x00ff00
+Time 2874000: Output Handshake - Data: 0x00ff00, Last: 0, User: 0, SPI: 0x00000000
+Time 2880000: Burst Transfer - Pixel 69: 0x00ff00
+Time 2880000: Output Handshake - Data: 0x00ff00, Last: 0, User: 0, SPI: 0x00000000
+Time 2887000: Burst Transfer - Pixel 70: 0x00ff00
+Time 2887000: Output Handshake - Data: 0x00ff00, Last: 0, User: 0, SPI: 0x00000000
+Time 2894000: Burst Transfer - Pixel 71: 0x00ff00
+Time 2894000: Output Handshake - Data: 0x00ff00, Last: 0, User: 0, SPI: 0x00000000
+Time 2900000: Burst Transfer - Pixel 72: 0x00ff00
+Time 2900000: Output Handshake - Data: 0x00ff00, Last: 0, User: 0, SPI: 0x00000000
+Time 2907000: Burst Transfer - Pixel 73: 0x00ff00
+Time 2907000: Output Handshake - Data: 0x00ff00, Last: 0, User: 0, SPI: 0x00000000
+Time 2914000: Burst Transfer - Pixel 74: 0x00ff00
+Time 2914000: Output Handshake - Data: 0x00ff00, Last: 0, User: 0, SPI: 0x00000000
+Time 2920000: Burst Transfer - Pixel 75: 0x00ff00
+Time 2920000: Output Handshake - Data: 0x00ff00, Last: 0, User: 0, SPI: 0x00000000
+Time 2927000: Burst Transfer - Pixel 76: 0x00ff00
+Time 2927000: Output Handshake - Data: 0x000f00, Last: 0, User: 0, SPI: 0x00000000
+Time 2934000: Burst Transfer - Pixel 77: 0x00ff00
+Time 2934000: Output Handshake - Data: 0x000f00, Last: 0, User: 0, SPI: 0x00000000
+Time 2940000: Burst Transfer - Pixel 78: 0x00ff00
+Time 2940000: Output Handshake - Data: 0x00ff00, Last: 0, User: 0, SPI: 0x00000000
+Time 2947000: Burst Transfer - Pixel 79: 0x00ff00
+Time 2947000: Output Handshake - Data: 0x00ff00, Last: 0, User: 0, SPI: 0x00000000
+Time 2954000: Burst Transfer - Pixel 80: 0xffffff
+Time 2954000: Output Handshake - Data: 0x00ff00, Last: 0, User: 0, SPI: 0x00000000
+Time 2960000: Burst Transfer - Pixel 81: 0xffffff
+Time 2960000: Output Handshake - Data: 0x00ff00, Last: 0, User: 0, SPI: 0x00000000
+Time 2967000: Burst Transfer - Pixel 82: 0xffffff
+Time 2967000: Output Handshake - Data: 0xffffff, Last: 0, User: 0, SPI: 0x00000000
+Time 2974000: Burst Transfer - Pixel 83: 0xffffff
+Time 2974000: Output Handshake - Data: 0xffffff, Last: 0, User: 0, SPI: 0x00000000
+Time 2980000: Burst Transfer - Pixel 84: 0xffffff
+Time 2980000: Output Handshake - Data: 0xffffff, Last: 0, User: 0, SPI: 0x00000000
+Time 2987000: Burst Transfer - Pixel 85: 0xffffff
+Time 2987000: Output Handshake - Data: 0xffffff, Last: 0, User: 0, SPI: 0x00000000
+Time 2994000: Burst Transfer - Pixel 86: 0xffffff
+Time 2994000: Output Handshake - Data: 0xffffff, Last: 0, User: 0, SPI: 0x00000000
+Time 3000000: Burst Transfer - Pixel 87: 0xffffff
+Time 3000000: Output Handshake - Data: 0xffffff, Last: 0, User: 0, SPI: 0x00000000
+Time 3007000: Burst Transfer - Pixel 88: 0xffffff
+Time 3007000: Output Handshake - Data: 0xffffff, Last: 0, User: 0, SPI: 0x00000000
+Time 3014000: Burst Transfer - Pixel 89: 0xffffff
+Time 3014000: Output Handshake - Data: 0xffffff, Last: 0, User: 0, SPI: 0x00000000
+Time 3020000: Burst Transfer - Pixel 90: 0xffffff
+Time 3020000: Output Handshake - Data: 0xffffff, Last: 0, User: 0, SPI: 0x00000000
+Time 3027000: Burst Transfer - Pixel 91: 0xffffff
+Time 3027000: Output Handshake - Data: 0xffffff, Last: 0, User: 0, SPI: 0x00000000
+Time 3034000: Burst Transfer - Pixel 92: 0xffffff
+Time 3034000: Output Handshake - Data: 0xffffff, Last: 0, User: 0, SPI: 0x00000000
+Time 3040000: Burst Transfer - Pixel 93: 0xffffff
+Time 3040000: Output Handshake - Data: 0xffffff, Last: 0, User: 0, SPI: 0x00000000
+Time 3047000: Burst Transfer - Pixel 94: 0xffffff
+Time 3047000: Output Handshake - Data: 0xffffff, Last: 0, User: 0, SPI: 0x00000000
+Time 3054000: Burst Transfer - Pixel 95: 0xffffff
+Time 3054000: Output Handshake - Data: 0xffffff, Last: 0, User: 0, SPI: 0x00000000
+Time 3060000: Burst Transfer - Pixel 96: 0xffffff
+Time 3060000: Output Handshake - Data: 0xffffff, Last: 0, User: 0, SPI: 0x00000000
+Time 3067000: Burst Transfer - Pixel 97: 0xffffff
+Time 3067000: Output Handshake - Data: 0xffffff, Last: 0, User: 0, SPI: 0x00000000
+Time 3074000: Burst Transfer - Pixel 98: 0xffffff
+Time 3074000: Output Handshake - Data: 0xffffff, Last: 0, User: 0, SPI: 0x00000000
+Time 3080000: Burst Transfer - Pixel 99: 0xffffff
+Time 3080000: Output Handshake - Data: 0xffffff, Last: 0, User: 0, SPI: 0x00000000
+Time 3087000: Output Handshake - Data: 0xffffff, Last: 1, User: 0, SPI: 0x00000000
+=== All Tests Completed ===
+
+=== Final Report ===
+Input Transactions: 80
+Output Transactions: 74
+Final SPI Output: 0x00000000
+$finish called at time : 5220110 ps : File "C:/Zybo_Harman/AXI4_Stream_HandSignal/AXI4_Stream_HandSignal.srcs/sim_1/new/tb_AXI4_HandSignal.sv" Line 115

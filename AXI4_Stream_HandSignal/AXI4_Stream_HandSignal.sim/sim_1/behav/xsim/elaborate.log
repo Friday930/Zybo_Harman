@@ -1,0 +1,28 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto f57fc8301e0046d1b207e0c47ee1fe21 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_AXI4_HandSignal_behav xil_defaultlib.tb_AXI4_HandSignal xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 11 for port 'h_counter' [C:/Zybo_Harman/AXI4_Stream_HandSignal/AXI4_Stream_HandSignal.srcs/sources_1/imports/AXI4_Stream_HandSignal/pixel_controller.sv:11]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 24 for port 'pixel_COLOR' [C:/Zybo_Harman/AXI4_Stream_HandSignal/AXI4_Stream_HandSignal.srcs/sources_1/imports/AXI4_Stream_HandSignal/TOP_HandSignal.v:54]
+WARNING: [VRFC 10-5021] port 'zone_id' is not connected on this instance [C:/Zybo_Harman/AXI4_Stream_HandSignal/AXI4_Stream_HandSignal.srcs/sources_1/imports/AXI4_Stream_HandSignal/TOP_HandSignal.v:59]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Zybo_Harman/AXI4_Stream_HandSignal/AXI4_Stream_HandSignal.srcs/sources_1/imports/AXI4_Stream_HandSignal/AreaSel.sv" Line 1. Module AreaSel_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Zybo_Harman/AXI4_Stream_HandSignal/AXI4_Stream_HandSignal.srcs/sources_1/imports/AXI4_Stream_HandSignal/hand_signal.sv" Line 1. Module hand_signal_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Zybo_Harman/AXI4_Stream_HandSignal/AXI4_Stream_HandSignal.srcs/sources_1/imports/AXI4_Stream_HandSignal/AreaSel.sv" Line 1. Module AreaSel_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Zybo_Harman/AXI4_Stream_HandSignal/AXI4_Stream_HandSignal.srcs/sources_1/imports/AXI4_Stream_HandSignal/hand_signal.sv" Line 1. Module hand_signal_default doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pixel_counter
+Compiling module xil_defaultlib.pixel_controller
+Compiling module xil_defaultlib.AreaSel_default
+Compiling module xil_defaultlib.rgb_color_detect
+Compiling module xil_defaultlib.hand_signal_default
+Compiling module xil_defaultlib.print_grid_default
+Compiling module xil_defaultlib.TOP_Hand_Signal_default
+Compiling module xil_defaultlib.AXI4_HandSignal
+Compiling module xil_defaultlib.tb_AXI4_HandSignal
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_AXI4_HandSignal_behav

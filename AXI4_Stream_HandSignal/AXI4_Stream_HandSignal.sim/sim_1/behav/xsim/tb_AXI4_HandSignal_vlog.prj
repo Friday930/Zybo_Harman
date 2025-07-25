@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../AXI4_Stream_HandSignal.srcs/sources_1/imports/AXI4_Stream_HandSignal/AXI4_HandSignal.v" \
+"../../../../AXI4_Stream_HandSignal.srcs/sources_1/imports/AXI4_Stream_HandSignal/TOP_HandSignal.v" \
+
+sv xil_defaultlib  \
+"../../../../AXI4_Stream_HandSignal.srcs/sources_1/imports/AXI4_Stream_HandSignal/AreaSel.sv" \
+"../../../../AXI4_Stream_HandSignal.srcs/sources_1/imports/AXI4_Stream_HandSignal/hand_signal.sv" \
+"../../../../AXI4_Stream_HandSignal.srcs/sources_1/imports/AXI4_Stream_HandSignal/pixel_controller.sv" \
+"../../../../AXI4_Stream_HandSignal.srcs/sources_1/imports/AXI4_Stream_HandSignal/print_grid.sv" \
+"../../../../AXI4_Stream_HandSignal.srcs/sources_1/imports/AXI4_Stream_HandSignal/rgb_color_detect.sv" \
+"../../../../AXI4_Stream_HandSignal.srcs/sim_1/new/tb_AXI4_HandSignal.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

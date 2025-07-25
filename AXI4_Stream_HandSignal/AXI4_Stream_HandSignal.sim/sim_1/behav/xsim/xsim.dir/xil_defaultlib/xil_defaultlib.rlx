@@ -1,0 +1,13 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Zybo_Harman/AXI4_Stream_HandSignal/AXI4_Stream_HandSignal.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,uvm,,,,,,
+C:/Zybo_Harman/AXI4_Stream_HandSignal/AXI4_Stream_HandSignal.srcs/sim_1/new/tb_AXI4_HandSignal.sv,1753410831,systemVerilog,,,,tb_AXI4_HandSignal,,uvm,,,,,,
+C:/Zybo_Harman/AXI4_Stream_HandSignal/AXI4_Stream_HandSignal.srcs/sources_1/imports/AXI4_Stream_HandSignal/AXI4_HandSignal.v,1753407153,verilog,,C:/Zybo_Harman/AXI4_Stream_HandSignal/AXI4_Stream_HandSignal.srcs/sources_1/imports/AXI4_Stream_HandSignal/TOP_HandSignal.v,,AXI4_HandSignal,,uvm,,,,,,
+C:/Zybo_Harman/AXI4_Stream_HandSignal/AXI4_Stream_HandSignal.srcs/sources_1/imports/AXI4_Stream_HandSignal/AreaSel.sv,1753340633,systemVerilog,,C:/Zybo_Harman/AXI4_Stream_HandSignal/AXI4_Stream_HandSignal.srcs/sources_1/imports/AXI4_Stream_HandSignal/hand_signal.sv,,AreaSel,,uvm,,,,,,
+C:/Zybo_Harman/AXI4_Stream_HandSignal/AXI4_Stream_HandSignal.srcs/sources_1/imports/AXI4_Stream_HandSignal/TOP_HandSignal.v,1753411098,verilog,,,,TOP_Hand_Signal,,uvm,,,,,,
+C:/Zybo_Harman/AXI4_Stream_HandSignal/AXI4_Stream_HandSignal.srcs/sources_1/imports/AXI4_Stream_HandSignal/hand_signal.sv,1753340841,systemVerilog,,C:/Zybo_Harman/AXI4_Stream_HandSignal/AXI4_Stream_HandSignal.srcs/sources_1/imports/AXI4_Stream_HandSignal/pixel_controller.sv,,hand_signal,,uvm,,,,,,
+C:/Zybo_Harman/AXI4_Stream_HandSignal/AXI4_Stream_HandSignal.srcs/sources_1/imports/AXI4_Stream_HandSignal/pixel_controller.sv,1753409952,systemVerilog,,C:/Zybo_Harman/AXI4_Stream_HandSignal/AXI4_Stream_HandSignal.srcs/sources_1/imports/AXI4_Stream_HandSignal/print_grid.sv,,pixel_controller;pixel_counter,,uvm,,,,,,
+C:/Zybo_Harman/AXI4_Stream_HandSignal/AXI4_Stream_HandSignal.srcs/sources_1/imports/AXI4_Stream_HandSignal/print_grid.sv,1753340930,systemVerilog,,C:/Zybo_Harman/AXI4_Stream_HandSignal/AXI4_Stream_HandSignal.srcs/sources_1/imports/AXI4_Stream_HandSignal/rgb_color_detect.sv,,print_grid,,uvm,,,,,,
+C:/Zybo_Harman/AXI4_Stream_HandSignal/AXI4_Stream_HandSignal.srcs/sources_1/imports/AXI4_Stream_HandSignal/rgb_color_detect.sv,1753340776,systemVerilog,,C:/Zybo_Harman/AXI4_Stream_HandSignal/AXI4_Stream_HandSignal.srcs/sim_1/new/tb_AXI4_HandSignal.sv,,rgb_color_detect,,uvm,,,,,,

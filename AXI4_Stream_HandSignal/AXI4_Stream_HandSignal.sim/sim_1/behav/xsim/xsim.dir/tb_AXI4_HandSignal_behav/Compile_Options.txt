@@ -1,0 +1,1 @@
+-wto "f57fc8301e0046d1b207e0c47ee1fe21" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "uvm" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "tb_AXI4_HandSignal_behav" "xil_defaultlib.tb_AXI4_HandSignal" "xil_defaultlib.glbl" -log "elaborate.log" 
