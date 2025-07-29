@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Jul 22 14:05:28 2025
+# Process ID: 14856
+# Current directory: C:/working/FPAG_Harman/250718_OV7670_HDMI_V2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22748 C:\working\FPAG_Harman\250718_OV7670_HDMI_V2\250718_OV7670_HDMI_V2.xpr
+# Log file: C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/vivado.log
+# Journal file: C:/working/FPAG_Harman/250718_OV7670_HDMI_V2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.xpr
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/impl_1/TOP_OV7670_HDMI.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]

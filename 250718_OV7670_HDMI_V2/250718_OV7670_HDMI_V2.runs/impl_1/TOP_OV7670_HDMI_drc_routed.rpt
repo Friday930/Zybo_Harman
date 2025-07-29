@@ -1,0 +1,164 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Wed Jul 23 17:03:20 2025
+| Host         : DESKTOP-7CFQ9ND running 64-bit major release  (build 9200)
+| Command      : report_drc -file TOP_OV7670_HDMI_drc_routed.rpt -pb TOP_OV7670_HDMI_drc_routed.pb -rpx TOP_OV7670_HDMI_drc_routed.rpx
+| Design       : TOP_OV7670_HDMI
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 24
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| CHECK-3     | Warning  | Report rule limit reached                                   | 1          |
+| PDRC-153    | Warning  | Gated clock check                                           | 1          |
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
+| REQP-1839   | Warning  | RAMB36 async control check                                  | 20         |
+| ZPS7-1      | Warning  | PS7 block required                                          | 1          |
++-------------+----------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CHECK-3#1 Warning
+Report rule limit reached  
+REQP-1839 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net u_spi_top/U_Debounce/counter_reg_reg[0]_0 is a gated clock net sourced by a combinational pin u_spi_top/U_Debounce/q_reg[7]_i_2/O, cell u_spi_top/U_Debounce/q_reg[7]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT u_spi_top/U_Debounce/q_reg[7]_i_2 is driving clock pin of 8 cells. This could lead to large hold time violations. Involved cells are:
+u_spi_top/U_Debounce/q_reg_reg[0], u_spi_top/U_Debounce/q_reg_reg[1],
+u_spi_top/U_Debounce/q_reg_reg[2], u_spi_top/U_Debounce/q_reg_reg[3],
+u_spi_top/U_Debounce/q_reg_reg[4], u_spi_top/U_Debounce/q_reg_reg[5],
+u_spi_top/U_Debounce/q_reg_reg[6], u_spi_top/U_Debounce/q_reg_reg[7]
+Related violations: <none>
+
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[14] (net: u_disp/U_Frame_Buffer/mem_reg_1_3_1[14]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/h_counter_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#2 Warning
+RAMB36 async control check  
+The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[14] (net: u_disp/U_Frame_Buffer/mem_reg_1_3_1[14]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/h_counter_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#3 Warning
+RAMB36 async control check  
+The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[14] (net: u_disp/U_Frame_Buffer/mem_reg_1_3_1[14]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/h_counter_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#4 Warning
+RAMB36 async control check  
+The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[14] (net: u_disp/U_Frame_Buffer/mem_reg_1_3_1[14]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/v_counter_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#5 Warning
+RAMB36 async control check  
+The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[14] (net: u_disp/U_Frame_Buffer/mem_reg_1_3_1[14]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/v_counter_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#6 Warning
+RAMB36 async control check  
+The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[14] (net: u_disp/U_Frame_Buffer/mem_reg_1_3_1[14]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/v_counter_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#7 Warning
+RAMB36 async control check  
+The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[14] (net: u_disp/U_Frame_Buffer/mem_reg_1_3_1[14]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/v_counter_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#8 Warning
+RAMB36 async control check  
+The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[14] (net: u_disp/U_Frame_Buffer/mem_reg_1_3_1[14]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/v_counter_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#9 Warning
+RAMB36 async control check  
+The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[15] (net: u_disp/U_Frame_Buffer/ADDRBWRADDR[15]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/h_counter_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#10 Warning
+RAMB36 async control check  
+The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[15] (net: u_disp/U_Frame_Buffer/ADDRBWRADDR[15]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/h_counter_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#11 Warning
+RAMB36 async control check  
+The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[15] (net: u_disp/U_Frame_Buffer/ADDRBWRADDR[15]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/h_counter_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#12 Warning
+RAMB36 async control check  
+The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[15] (net: u_disp/U_Frame_Buffer/ADDRBWRADDR[15]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/v_counter_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#13 Warning
+RAMB36 async control check  
+The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[15] (net: u_disp/U_Frame_Buffer/ADDRBWRADDR[15]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/v_counter_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#14 Warning
+RAMB36 async control check  
+The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[15] (net: u_disp/U_Frame_Buffer/ADDRBWRADDR[15]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/v_counter_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#15 Warning
+RAMB36 async control check  
+The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[15] (net: u_disp/U_Frame_Buffer/ADDRBWRADDR[15]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/v_counter_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#16 Warning
+RAMB36 async control check  
+The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[15] (net: u_disp/U_Frame_Buffer/ADDRBWRADDR[15]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/v_counter_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#17 Warning
+RAMB36 async control check  
+The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[15] (net: u_disp/U_Frame_Buffer/ADDRBWRADDR[15]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/v_counter_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#18 Warning
+RAMB36 async control check  
+The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[15] (net: u_disp/U_Frame_Buffer/ADDRBWRADDR[15]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/v_counter_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#19 Warning
+RAMB36 async control check  
+The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[15] (net: u_disp/U_Frame_Buffer/ADDRBWRADDR[15]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/v_counter_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#20 Warning
+RAMB36 async control check  
+The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[15] (net: u_disp/U_Frame_Buffer/ADDRBWRADDR[15]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/v_counter_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

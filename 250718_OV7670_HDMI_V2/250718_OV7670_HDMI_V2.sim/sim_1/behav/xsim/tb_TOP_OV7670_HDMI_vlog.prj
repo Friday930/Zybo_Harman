@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../250718_OV7670_HDMI_V2.srcs/sources_1/VGA/Frame_Buffer.sv" \
+"../../../../250718_OV7670_HDMI_V2.srcs/sources_1/VGA/OV7670_MemController.sv" \
+"../../../../250718_OV7670_HDMI_V2.srcs/sources_1/VGA/OV7670_VGA_Display.sv" \
+"../../../../250718_OV7670_HDMI_V2.srcs/sources_1/VGA/QVGA_MemController.sv" \
+"../../../../250718_OV7670_HDMI_V2.srcs/sources_1/SCCB/SCCB_Master.sv" \
+"../../../../250718_OV7670_HDMI_V2.srcs/sources_1/TOP/new/TOP_OV7670_HDMI.sv" \
+"../../../../250718_OV7670_HDMI_V2.srcs/sources_1/VGA/VGA_Controller.sv" \
+"../../../../250718_OV7670_HDMI_V2.srcs/sim_1/new/tb_TOP_OV7670_HDMI.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

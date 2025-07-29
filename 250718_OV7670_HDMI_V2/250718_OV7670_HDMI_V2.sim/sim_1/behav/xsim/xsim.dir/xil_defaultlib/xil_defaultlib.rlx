@@ -1,0 +1,21 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,uvm,,,,,,
+C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sim_1/new/tb_TOP_OV7670_HDMI.sv,1752836618,systemVerilog,,,,tb_TOP_OV7670_HDMI,,uvm,,,,,,
+C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/HDMI/ClockGen.vhd,1752724091,vhdl,C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/HDMI/rgb2dvi.vhd,,,clockgen,,,,,,,,
+C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/HDMI/DVI_Constants.vhd,1752724097,vhdl,C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/HDMI/TMDS_Encoder.vhd,,,dvi_constants,,,,,,,,
+C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/HDMI/OutputSERDES.vhd,1752724102,vhdl,C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/HDMI/rgb2dvi.vhd,,,outputserdes,,,,,,,,
+C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/HDMI/ResetBridge.vhd,1752724624,vhdl,,,,,,,,,,,,
+C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/HDMI/SyncAsync.vhd,1752724430,vhdl,C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/HDMI/SyncAsyncReset.vhd,,,syncasync,,,,,,,,
+C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/HDMI/SyncAsyncReset.vhd,1752724433,vhdl,C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/HDMI/rgb2dvi.vhd,,,resetbridge,,,,,,,,
+C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/HDMI/TMDS_Encoder.vhd,1752724111,vhdl,C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/HDMI/rgb2dvi.vhd,,,tmds_encoder,,,,,,,,
+C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/HDMI/rgb2dvi.vhd,1752798391,vhdl,,,,rgb2dvi,,,,,,,,
+C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/SCCB/SCCB_Master.sv,1752836841,systemVerilog,,C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/TOP/new/TOP_OV7670_HDMI.sv,,I2C_clk_gen;OV7670_Master;OV7670_config_rom;SCCB_controlUnit;btn_detector;poweron_pulse_gen,,uvm,,,,,,
+C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/TOP/new/TOP_OV7670_HDMI.sv,1752836867,systemVerilog,,C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/VGA/VGA_Controller.sv,,TOP_OV7670_HDMI,,uvm,,,,,,
+C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/VGA/Frame_Buffer.sv,1752824337,systemVerilog,,C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/VGA/OV7670_MemController.sv,,Frame_Buffer,,uvm,,,,,,
+C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/VGA/OV7670_MemController.sv,1752802609,systemVerilog,,C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/VGA/OV7670_VGA_Display.sv,,OV7670_MemController,,uvm,,,,,,
+C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/VGA/OV7670_VGA_Display.sv,1752824339,systemVerilog,,C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/VGA/QVGA_MemController.sv,,OV7670_VGA_Display,,uvm,,,,,,
+C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/VGA/QVGA_MemController.sv,1752827151,systemVerilog,,C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/SCCB/SCCB_Master.sv,,QVGA_MemController;rom,,uvm,,,,,,
+C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/VGA/VGA_Controller.sv,1752824337,systemVerilog,,C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sim_1/new/tb_TOP_OV7670_HDMI.sv,,VGA_Controller;VGA_decoder;pixel_clk_gen;pixel_counter,,uvm,,,,,,

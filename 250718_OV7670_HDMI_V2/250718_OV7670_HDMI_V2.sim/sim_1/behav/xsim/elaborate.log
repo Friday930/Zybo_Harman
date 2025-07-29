@@ -1,0 +1,51 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto b995baf2cef441a1a096afc771c26eb4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_TOP_OV7670_HDMI_behav xil_defaultlib.tb_TOP_OV7670_HDMI xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package xil_defaultlib.dvi_constants
+Compiling module xil_defaultlib.btn_detector
+Compiling module xil_defaultlib.I2C_clk_gen
+Compiling module xil_defaultlib.SCCB_controlUnit
+Compiling module xil_defaultlib.OV7670_config_rom
+Compiling module xil_defaultlib.OV7670_Master
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.IBUFG
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=40,CLKIN...
+Compiling module unisims_ver.PLLE2_BASE(CLKFBOUT_MULT=40,CLKI...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.pixel_clk_gen
+Compiling module xil_defaultlib.pixel_counter
+Compiling module xil_defaultlib.VGA_decoder
+Compiling module xil_defaultlib.VGA_Controller
+Compiling module xil_defaultlib.OV7670_MemController
+Compiling module xil_defaultlib.Frame_Buffer
+Compiling module xil_defaultlib.rom
+Compiling module xil_defaultlib.QVGA_MemController
+Compiling module xil_defaultlib.OV7670_VGA_Display
+Compiling architecture behavioral of entity xil_defaultlib.TMDS_Encoder [tmds_encoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.SyncAsync [\SyncAsync(kresetto='1')\]
+Compiling architecture behavioral of entity xil_defaultlib.ResetBridge [resetbridge_default]
+Compiling architecture obufds_v of entity unisim.OBUFDS [\OBUFDS(iostandard="TMDS_33")(1,...]
+Compiling architecture oserdese2_v of entity unisim.OSERDESE2 [\OSERDESE2(data_rate_tq="SDR",da...]
+Compiling architecture oserdese2_v of entity unisim.OSERDESE2 [\OSERDESE2(data_rate_tq="SDR",da...]
+Compiling architecture behavioral of entity xil_defaultlib.OutputSERDES [outputserdes_default]
+Compiling architecture behavioral of entity xil_defaultlib.rgb2dvi [\rgb2dvi(kgenerateserialclk=fals...]
+Compiling module xil_defaultlib.TOP_OV7670_HDMI
+Compiling module xil_defaultlib.tb_TOP_OV7670_HDMI
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_TOP_OV7670_HDMI_behav

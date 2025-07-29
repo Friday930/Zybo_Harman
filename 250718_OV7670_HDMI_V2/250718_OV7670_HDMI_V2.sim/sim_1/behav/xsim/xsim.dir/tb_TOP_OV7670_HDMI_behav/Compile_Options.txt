@@ -1,0 +1,1 @@
+-wto "b995baf2cef441a1a096afc771c26eb4" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "uvm" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "tb_TOP_OV7670_HDMI_behav" "xil_defaultlib.tb_TOP_OV7670_HDMI" "xil_defaultlib.glbl" -log "elaborate.log" 

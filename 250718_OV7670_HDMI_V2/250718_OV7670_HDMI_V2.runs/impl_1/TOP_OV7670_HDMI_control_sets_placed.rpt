@@ -1,0 +1,270 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Wed Jul 23 17:01:23 2025
+| Host         : DESKTOP-7CFQ9ND running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TOP_OV7670_HDMI_control_sets_placed.rpt
+| Design       : TOP_OV7670_HDMI
+| Device       : xc7z020
+--------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   192 |
+|    Minimum number of control sets                        |   192 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   115 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   192 |
+| >= 0 to < 4        |     5 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     5 |
+| >= 10 to < 12      |     5 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     1 |
+| >= 16              |   170 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              96 |           32 |
+| No           | No                    | Yes                    |              72 |           27 |
+| No           | Yes                   | No                     |              85 |           34 |
+| Yes          | No                    | No                     |            5166 |         2364 |
+| Yes          | No                    | Yes                    |              71 |           25 |
+| Yes          | Yes                   | No                     |             195 |           59 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------+----------------------------------------------------------------+-----------------------------------------------------------------+------------------+----------------+--------------+
+|                Clock Signal                |                          Enable Signal                         |                         Set/Reset Signal                        | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------------------------------------+----------------------------------------------------------------+-----------------------------------------------------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG                             | U_OV7670_Master/U_SCCB_controlUnit/r_sda_i_1_n_0               | reset_IBUF                                                      |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                             | U_OV7670_Master/U_btn_detector/tick                            | reset_IBUF                                                      |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                             | U_OV7670_Master/U_SCCB_controlUnit/FSM_onehot_hpd_state_reg[2] | reset_IBUF                                                      |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                             | U_OV7670_Master/U_SCCB_controlUnit/r_scl_i_1_n_0               | reset_IBUF                                                      |                1 |              1 |         1.00 |
+|  pixel_clk                                 |                                                                | reset_IBUF                                                      |                1 |              2 |         2.00 |
+|  clk_IBUF_BUFG                             | U_OV7670_Master/U_SCCB_controlUnit/bitCount[3]_i_1_n_0         | reset_IBUF                                                      |                2 |              4 |         2.00 |
+|  pixel_clk                                 |                                                                | u_disp/U_VGAController/U_Pix_counter/v_counter_reg[9]_0         |                3 |              4 |         1.33 |
+|  clk_IBUF_BUFG                             | U_OV7670_Master/U_SCCB_controlUnit/dataBit[5]_i_1_n_0          | reset_IBUF                                                      |                3 |              6 |         2.00 |
+|  clk_IBUF_BUFG                             | u_spi_top/U_SPI_Master/sclk_counter_reg[6]_i_1_n_0             | reset_IBUF                                                      |                3 |              7 |         2.33 |
+|  clk_IBUF_BUFG                             | U_OV7670_Master/U_SCCB_controlUnit/r_addr[7]_i_1_n_0           | reset_IBUF                                                      |                3 |              8 |         2.67 |
+|  pixel_clk                                 | u_disp/U_OV7670_MemController/v_counter                        | u_disp/U_OV7670_MemController/RSTB                              |                2 |              8 |         4.00 |
+|  pixel_clk                                 | u_disp/U_OV7670_MemController/byte0[7]_i_1_n_0                 | reset_IBUF                                                      |                5 |              8 |         1.60 |
+|  u_spi_top/U_Debounce/counter_reg_reg[0]_0 |                                                                | reset_IBUF                                                      |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                             |                                                                | U_OV7670_Master/U_SCCB_controlUnit/SR[0]                        |                3 |              9 |         3.00 |
+|  u_disp/U_VGAController/U_Pix_Clk_gen/CLK  | u_disp/U_VGAController/U_Pix_counter/v_counter                 | reset_IBUF                                                      |                3 |             10 |         3.33 |
+|  pixel_clk                                 |                                                                | u_rgb2dvi/DataEncoders[0].DataEncoder/pDataOutRaw[9]_i_1__0_n_0 |                3 |             10 |         3.33 |
+|  pixel_clk                                 | u_disp/U_OV7670_MemController/byte_toggle                      | u_disp/U_OV7670_MemController/RSTC                              |                3 |             10 |         3.33 |
+|  u_disp/U_VGAController/U_Pix_Clk_gen/CLK  |                                                                | reset_IBUF                                                      |                5 |             10 |         2.00 |
+|  clk_IBUF_BUFG                             | u_spi_top/U_SPI_Master/bit_counter_reg[2]_i_1_n_0              | reset_IBUF                                                      |                3 |             11 |         3.67 |
+|  clk_IBUF_BUFG                             | U_OV7670_Master/U_btn_detector/start_reg_i_1_n_0               | reset_IBUF                                                      |                3 |             12 |         4.00 |
+|  pixel_clk                                 |                                                                | u_disp/U_VGAController/U_Pix_counter/r_initProcess_reg_2        |                5 |             12 |         2.40 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/v_counter_reg[4]_1        |                                                                 |                3 |             14 |         4.67 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_79            |                                                                 |                3 |             16 |         5.33 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_79             |                                                                 |                2 |             16 |         8.00 |
+|  clk_IBUF_BUFG                             |                                                                |                                                                 |                5 |             18 |         3.60 |
+|  clk_IBUF_BUFG                             | u_spi_top/U_Packet_Controller/packet_counter[3]_i_1_n_0        | reset_IBUF                                                      |                4 |             20 |         5.00 |
+|  clk_IBUF_BUFG                             | U_OV7670_Master/U_SCCB_controlUnit/E[0]                        | reset_IBUF                                                      |               11 |             29 |         2.64 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_40            |                                                                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_32            |                                                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_43            |                                                                 |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_24            |                                                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_31            |                                                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_38            |                                                                 |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_50            |                                                                 |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_51            |                                                                 |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_10            |                                                                 |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_33            |                                                                 |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_1             |                                                                 |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_2             |                                                                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_29            |                                                                 |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_35            |                                                                 |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_4             |                                                                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_44            |                                                                 |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_14            |                                                                 |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_17            |                                                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_25            |                                                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_12            |                                                                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_16            |                                                                 |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_3             |                                                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_28            |                                                                 |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_22            |                                                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_15            |                                                                 |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_21            |                                                                 |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_0             |                                                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_23            |                                                                 |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg               |                                                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_26            |                                                                 |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_30            |                                                                 |               19 |             32 |         1.68 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_34            |                                                                 |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_36            |                                                                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_13            |                                                                 |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_37            |                                                                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_39            |                                                                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_11            |                                                                 |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_20            |                                                                 |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_27             |                                                                 |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_14             |                                                                 |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_33             |                                                                 |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_34             |                                                                 |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_7             |                                                                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_67            |                                                                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_58            |                                                                 |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_11             |                                                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_78            |                                                                 |               20 |             32 |         1.60 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_76            |                                                                 |               19 |             32 |         1.68 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_13             |                                                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_75            |                                                                 |               22 |             32 |         1.45 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_10             |                                                                 |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_59            |                                                                 |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_29             |                                                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_15             |                                                                 |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_61            |                                                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_21             |                                                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_55            |                                                                 |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_64            |                                                                 |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_68            |                                                                 |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_52            |                                                                 |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_1              |                                                                 |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_66            |                                                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_0              |                                                                 |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_63            |                                                                 |               21 |             32 |         1.52 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_74            |                                                                 |               20 |             32 |         1.60 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_9             |                                                                 |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_17             |                                                                 |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_23             |                                                                 |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_72            |                                                                 |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg                |                                                                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_57            |                                                                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_73            |                                                                 |               20 |             32 |         1.60 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_77            |                                                                 |               19 |             32 |         1.68 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_12             |                                                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_20             |                                                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_24             |                                                                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_54            |                                                                 |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_60            |                                                                 |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_62            |                                                                 |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_70            |                                                                 |               20 |             32 |         1.60 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_16             |                                                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_22             |                                                                 |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_65            |                                                                 |               20 |             32 |         1.60 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_18             |                                                                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_53            |                                                                 |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_25             |                                                                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_8             |                                                                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_69            |                                                                 |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_26             |                                                                 |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_56            |                                                                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_28             |                                                                 |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_3              |                                                                 |               20 |             32 |         1.60 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_30             |                                                                 |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_71            |                                                                 |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_32             |                                                                 |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_6             |                                                                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_19             |                                                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_2              |                                                                 |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_31             |                                                                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_8              |                                                                 |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_44             |                                                                 |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_7              |                                                                 |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_60             |                                                                 |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_62             |                                                                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_67             |                                                                 |               19 |             32 |         1.68 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_39             |                                                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_41             |                                                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_51             |                                                                 |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_53             |                                                                 |               11 |             32 |         2.91 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_71             |                                                                 |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_76             |                                                                 |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_77             |                                                                 |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG                             | u_spi_top/U_Packet_Controller/timer_counter[31]_i_1_n_0        | reset_IBUF                                                      |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_65             |                                                                 |               20 |             32 |         1.60 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_9              |                                                                 |                9 |             32 |         3.56 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_27            |                                                                 |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_75             |                                                                 |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_74             |                                                                 |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_38             |                                                                 |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_64             |                                                                 |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_42             |                                                                 |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_59             |                                                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_49             |                                                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_55             |                                                                 |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_47             |                                                                 |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_61             |                                                                 |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_48             |                                                                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_54             |                                                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_52             |                                                                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_35             |                                                                 |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_72             |                                                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_73             |                                                                 |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_78             |                                                                 |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_56             |                                                                 |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_6              |                                                                 |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_57             |                                                                 |               15 |             32 |         2.13 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_68             |                                                                 |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_4              |                                                                 |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_58             |                                                                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_50             |                                                                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_46             |                                                                 |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_37             |                                                                 |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_45             |                                                                 |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_5              |                                                                 |               17 |             32 |         1.88 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_63             |                                                                 |               20 |             32 |         1.60 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_69             |                                                                 |               24 |             32 |         1.33 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_36             |                                                                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_43             |                                                                 |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_66             |                                                                 |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_70             |                                                                 |               19 |             32 |         1.68 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_41            |                                                                 |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_42            |                                                                 |               16 |             32 |         2.00 |
+|  pixel_clk                                 |                                                                | u_rgb2dvi/DataEncoders[0].DataEncoder/SR[0]                     |               12 |             32 |         2.67 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_45            |                                                                 |               10 |             32 |         3.20 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_46            |                                                                 |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_47            |                                                                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_48            |                                                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_49            |                                                                 |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_5             |                                                                 |               18 |             32 |         1.78 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_18            |                                                                 |               16 |             32 |         2.00 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_blue_reg_19            |                                                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG                             | u_disp/U_VGAController/U_Pix_counter/is_red_reg_40             |                                                                 |               13 |             32 |         2.46 |
+|  clk_IBUF_BUFG                             |                                                                | reset_IBUF                                                      |               27 |             70 |         2.59 |
+|  pixel_clk                                 |                                                                |                                                                 |               27 |             78 |         2.89 |
+|  pixel_clk                                 | u_disp/U_OV7670_MemController/pix_data_reg                     | reset_IBUF                                                      |               27 |             97 |         3.59 |
++--------------------------------------------+----------------------------------------------------------------+-----------------------------------------------------------------+------------------+----------------+--------------+
+
+

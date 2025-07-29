@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jul 23 16:57:28 2025
+# Process ID: 10956
+# Current directory: C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/synth_1
+# Command line: vivado.exe -log TOP_OV7670_HDMI.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP_OV7670_HDMI.tcl
+# Log file: C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/synth_1/TOP_OV7670_HDMI.vds
+# Journal file: C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TOP_OV7670_HDMI.tcl -notrace
