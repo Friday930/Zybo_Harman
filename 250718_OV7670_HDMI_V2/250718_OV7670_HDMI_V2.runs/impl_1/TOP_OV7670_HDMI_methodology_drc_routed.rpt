@@ -1,11 +1,11 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Wed Jul 23 17:03:22 2025
+| Date         : Tue Jul 29 11:41:08 2025
 | Host         : DESKTOP-7CFQ9ND running 64-bit major release  (build 9200)
 | Command      : report_methodology -file TOP_OV7670_HDMI_methodology_drc_routed.rpt -pb TOP_OV7670_HDMI_methodology_drc_routed.pb -rpx TOP_OV7670_HDMI_methodology_drc_routed.rpx
 | Design       : TOP_OV7670_HDMI
-| Device       : xc7z020clg400-1
+| Device       : xc7z010clg400-1
 | Speed File   : -1
 | Design State : Fully Routed
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -23,12 +23,12 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 367
+             Violations found: 347
 +-----------+------------------+--------------------------------------------+------------+
 | Rule      | Severity         | Description                                | Violations |
 +-----------+------------------+--------------------------------------------+------------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell                | 349        |
-| SYNTH-6   | Warning          | Timing of a RAM block might be sub-optimal | 9          |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell                | 336        |
+| SYNTH-6   | Warning          | Timing of a RAM block might be sub-optimal | 2          |
 | TIMING-18 | Warning          | Missing input or output delay              | 9          |
 +-----------+------------------+--------------------------------------------+------------+
 
@@ -1116,710 +1116,610 @@ Related violations: <none>
 
 TIMING-17#217 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/n1d_1_reg[3]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/n1q_m_2_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#218 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/n1q_m_2_reg[0]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/n1q_m_2_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#219 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/n1q_m_2_reg[1]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/n1q_m_2_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#220 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/n1q_m_2_reg[2]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/n1q_m_2_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#221 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/n1q_m_2_reg[3]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pC0_1_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#222 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pC0_1_reg/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pC0_2_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#223 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pC0_2_reg/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pC1_1_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#224 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pC1_1_reg/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pC1_2_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#225 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pC1_2_reg/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pDataOutRaw_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#226 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pDataOutRaw_reg[0]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pDataOutRaw_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#227 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pDataOutRaw_reg[1]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pDataOutRaw_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#228 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pDataOutRaw_reg[2]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pDataOutRaw_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#229 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pDataOutRaw_reg[3]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pDataOutRaw_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#230 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pDataOutRaw_reg[4]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pDataOutRaw_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#231 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pDataOutRaw_reg[5]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pDataOutRaw_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#232 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pDataOutRaw_reg[6]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pDataOutRaw_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#233 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pDataOutRaw_reg[7]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pDataOut_1_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#234 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pDataOutRaw_reg[8]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pDataOut_1_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#235 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pDataOutRaw_reg[9]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pDataOut_1_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#236 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pDataOut_1_reg[0]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pDataOut_1_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#237 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pDataOut_1_reg[1]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pDataOut_1_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#238 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pDataOut_1_reg[2]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pVde_1_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#239 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pDataOut_1_reg[3]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pVde_2_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#240 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pDataOut_1_reg[4]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/q_m_2_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#241 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pVde_1_reg/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/q_m_2_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#242 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/pVde_2_reg/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/q_m_2_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#243 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/q_m_2_reg[0]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/q_m_2_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#244 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/q_m_2_reg[1]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/q_m_2_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#245 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/q_m_2_reg[2]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/q_m_2_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#246 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/q_m_2_reg[3]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/q_m_2_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#247 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/q_m_2_reg[4]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataSerializer/SerializerMaster/CLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#248 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/q_m_2_reg[5]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataSerializer/SerializerMaster/CLKDIV is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#249 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/q_m_2_reg[6]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[0].DataSerializer/SerializerSlave/CLKDIV is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#250 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/q_m_2_reg[7]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/cnt_t_3_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#251 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataEncoder/q_m_2_reg[8]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/cnt_t_3_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#252 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataSerializer/SerializerMaster/CLK is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/cnt_t_3_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#253 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataSerializer/SerializerMaster/CLKDIV is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/cnt_t_3_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#254 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[0].DataSerializer/SerializerSlave/CLKDIV is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/n0q_m_2_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#255 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/cnt_t_3_reg[1]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/n0q_m_2_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#256 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/cnt_t_3_reg[2]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/n0q_m_2_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#257 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/cnt_t_3_reg[3]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/n1d_1_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#258 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/cnt_t_3_reg[4]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/n1d_1_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#259 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/n0q_m_2_reg[1]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/n1d_1_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#260 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/n0q_m_2_reg[2]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/n1q_m_2_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#261 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/n0q_m_2_reg[3]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/n1q_m_2_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#262 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/n1d_1_reg[0]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/n1q_m_2_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#263 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/n1d_1_reg[1]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/n1q_m_2_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#264 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/n1d_1_reg[2]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/pDataOutRaw_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#265 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/n1d_1_reg[3]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/pDataOutRaw_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#266 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/n1q_m_2_reg[0]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/pDataOutRaw_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#267 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/n1q_m_2_reg[1]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/pDataOutRaw_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#268 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/n1q_m_2_reg[2]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/pDataOutRaw_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#269 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/n1q_m_2_reg[3]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/pDataOutRaw_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#270 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/pDataOutRaw_reg[0]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/pDataOutRaw_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#271 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/pDataOutRaw_reg[1]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/pDataOutRaw_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#272 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/pDataOutRaw_reg[2]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/pDataOutRaw_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#273 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/pDataOutRaw_reg[3]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/pDataOut_1_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#274 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/pDataOutRaw_reg[4]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/pDataOut_1_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#275 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/pDataOutRaw_reg[5]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/pDataOut_1_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#276 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/pDataOutRaw_reg[6]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/pDataOut_1_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#277 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/pDataOutRaw_reg[7]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/pDataOut_1_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#278 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/pDataOutRaw_reg[8]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/pDataOut_1_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#279 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/pDataOutRaw_reg[9]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/q_m_2_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#280 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/pDataOut_1_reg[0]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/q_m_2_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#281 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/pDataOut_1_reg[1]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/q_m_2_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#282 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/pDataOut_1_reg[2]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/q_m_2_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#283 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/pDataOut_1_reg[3]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/q_m_2_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#284 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/pDataOut_1_reg[4]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/q_m_2_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#285 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/pDataOut_1_reg[5]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/q_m_2_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#286 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/q_m_2_reg[0]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/q_m_2_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#287 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/q_m_2_reg[1]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataSerializer/SerializerMaster/CLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#288 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/q_m_2_reg[2]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataSerializer/SerializerMaster/CLKDIV is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#289 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/q_m_2_reg[3]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[1].DataSerializer/SerializerSlave/CLKDIV is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#290 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/q_m_2_reg[4]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/cnt_t_3_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#291 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/q_m_2_reg[5]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/cnt_t_3_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#292 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/q_m_2_reg[6]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/cnt_t_3_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#293 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/q_m_2_reg[7]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/cnt_t_3_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#294 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataEncoder/q_m_2_reg[8]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/n0q_m_2_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#295 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataSerializer/SerializerMaster/CLK is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/n0q_m_2_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#296 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataSerializer/SerializerMaster/CLKDIV is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/n0q_m_2_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#297 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[1].DataSerializer/SerializerSlave/CLKDIV is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/n1d_1_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#298 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/cnt_t_3_reg[1]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/n1d_1_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#299 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/cnt_t_3_reg[2]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/n1d_1_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#300 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/cnt_t_3_reg[3]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/n1q_m_2_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#301 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/cnt_t_3_reg[4]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/n1q_m_2_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#302 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/n0q_m_2_reg[1]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/n1q_m_2_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#303 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/n0q_m_2_reg[2]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/n1q_m_2_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#304 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/n0q_m_2_reg[3]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/pDataOutRaw_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#305 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/n1d_1_reg[0]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/pDataOutRaw_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#306 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/n1d_1_reg[1]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/pDataOutRaw_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#307 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/n1d_1_reg[2]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/pDataOutRaw_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#308 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/n1d_1_reg[3]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/pDataOutRaw_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#309 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/n1q_m_2_reg[0]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/pDataOutRaw_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#310 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/n1q_m_2_reg[1]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/pDataOutRaw_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#311 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/n1q_m_2_reg[2]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/pDataOutRaw_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#312 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/n1q_m_2_reg[3]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/pDataOut_1_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#313 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/pDataOutRaw_reg[0]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/pDataOut_1_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#314 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/pDataOutRaw_reg[1]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/pDataOut_1_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#315 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/pDataOutRaw_reg[2]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/pDataOut_1_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#316 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/pDataOutRaw_reg[3]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/pDataOut_1_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#317 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/pDataOutRaw_reg[4]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/q_m_2_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#318 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/pDataOutRaw_reg[5]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/q_m_2_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#319 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/pDataOutRaw_reg[6]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/q_m_2_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#320 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/pDataOutRaw_reg[7]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/q_m_2_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#321 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/pDataOutRaw_reg[8]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/q_m_2_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#322 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/pDataOutRaw_reg[9]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/q_m_2_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#323 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/pDataOut_1_reg[0]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/q_m_2_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#324 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/pDataOut_1_reg[1]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataSerializer/SerializerMaster/CLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#325 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/pDataOut_1_reg[2]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataSerializer/SerializerMaster/CLKDIV is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#326 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/pDataOut_1_reg[3]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/DataEncoders[2].DataSerializer/SerializerSlave/CLKDIV is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#327 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/pDataOut_1_reg[4]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/LockLostReset/SyncAsyncx/oSyncStages_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#328 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/q_m_2_reg[0]/C is not reached by a timing clock
+The clock pin u_rgb2dvi/LockLostReset/SyncAsyncx/oSyncStages_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#329 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/q_m_2_reg[1]/C is not reached by a timing clock
+The clock pin u_spi_top/U_Debounce/q_reg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#330 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/q_m_2_reg[2]/C is not reached by a timing clock
+The clock pin u_spi_top/U_Debounce/q_reg_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#331 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/q_m_2_reg[3]/C is not reached by a timing clock
+The clock pin u_spi_top/U_Debounce/q_reg_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#332 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/q_m_2_reg[4]/C is not reached by a timing clock
+The clock pin u_spi_top/U_Debounce/q_reg_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#333 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/q_m_2_reg[5]/C is not reached by a timing clock
+The clock pin u_spi_top/U_Debounce/q_reg_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#334 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/q_m_2_reg[6]/C is not reached by a timing clock
+The clock pin u_spi_top/U_Debounce/q_reg_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#335 Critical Warning
 Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/q_m_2_reg[7]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#336 Critical Warning
-Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataEncoder/q_m_2_reg[8]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#337 Critical Warning
-Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataSerializer/SerializerMaster/CLK is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#338 Critical Warning
-Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataSerializer/SerializerMaster/CLKDIV is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#339 Critical Warning
-Non-clocked sequential cell  
-The clock pin u_rgb2dvi/DataEncoders[2].DataSerializer/SerializerSlave/CLKDIV is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#340 Critical Warning
-Non-clocked sequential cell  
-The clock pin u_rgb2dvi/LockLostReset/SyncAsyncx/oSyncStages_reg[0]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#341 Critical Warning
-Non-clocked sequential cell  
-The clock pin u_rgb2dvi/LockLostReset/SyncAsyncx/oSyncStages_reg[1]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#342 Critical Warning
-Non-clocked sequential cell  
-The clock pin u_spi_top/U_Debounce/q_reg_reg[0]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#343 Critical Warning
-Non-clocked sequential cell  
-The clock pin u_spi_top/U_Debounce/q_reg_reg[1]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#344 Critical Warning
-Non-clocked sequential cell  
-The clock pin u_spi_top/U_Debounce/q_reg_reg[2]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#345 Critical Warning
-Non-clocked sequential cell  
-The clock pin u_spi_top/U_Debounce/q_reg_reg[3]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#346 Critical Warning
-Non-clocked sequential cell  
-The clock pin u_spi_top/U_Debounce/q_reg_reg[4]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#347 Critical Warning
-Non-clocked sequential cell  
-The clock pin u_spi_top/U_Debounce/q_reg_reg[5]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#348 Critical Warning
-Non-clocked sequential cell  
 The clock pin u_spi_top/U_Debounce/q_reg_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-17#349 Critical Warning
+TIMING-17#336 Critical Warning
 Non-clocked sequential cell  
 The clock pin u_spi_top/U_Debounce/q_reg_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 SYNTH-6#1 Warning
 Timing of a RAM block might be sub-optimal  
-The timing for the instance u_disp/U_Frame_Buffer/mem_reg_1_11, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
-Related violations: <none>
-
-SYNTH-6#2 Warning
-Timing of a RAM block might be sub-optimal  
-The timing for the instance u_disp/U_Frame_Buffer/mem_reg_1_12, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
-Related violations: <none>
-
-SYNTH-6#3 Warning
-Timing of a RAM block might be sub-optimal  
-The timing for the instance u_disp/U_Frame_Buffer/mem_reg_1_15, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
-Related violations: <none>
-
-SYNTH-6#4 Warning
-Timing of a RAM block might be sub-optimal  
-The timing for the instance u_disp/U_Frame_Buffer/mem_reg_1_2, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
-Related violations: <none>
-
-SYNTH-6#5 Warning
-Timing of a RAM block might be sub-optimal  
-The timing for the instance u_disp/U_Frame_Buffer/mem_reg_1_3, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
-Related violations: <none>
-
-SYNTH-6#6 Warning
-Timing of a RAM block might be sub-optimal  
 The timing for the instance u_disp/U_Frame_Buffer/mem_reg_1_4, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
 Related violations: <none>
 
-SYNTH-6#7 Warning
-Timing of a RAM block might be sub-optimal  
-The timing for the instance u_disp/U_Frame_Buffer/mem_reg_1_5, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
-Related violations: <none>
-
-SYNTH-6#8 Warning
-Timing of a RAM block might be sub-optimal  
-The timing for the instance u_disp/U_Frame_Buffer/mem_reg_1_6, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
-Related violations: <none>
-
-SYNTH-6#9 Warning
+SYNTH-6#2 Warning
 Timing of a RAM block might be sub-optimal  
 The timing for the instance u_disp/U_Frame_Buffer/mem_reg_1_7, implemented as a RAM block, might be sub-optimal as no output register was merged into the block.
 Related violations: <none>

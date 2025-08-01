@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/impl_1/TOP_OV7670_HDMI.tcl"
+  variable script "C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/impl_1/TOP_OV7670_HDMI.tcl"
   variable category "vivado_impl"
 }
 
@@ -125,25 +125,26 @@ set rc [catch {
   set_param chipscope.maxJobs 4
   set_param xicom.use_bs_reader 1
 OPTRACE "create in-memory project" START { }
-  create_project -in_memory -part xc7z020clg400-1
-  set_property board_part digilentinc.com:zybo-z7-20:part0:1.2 [current_project]
+  create_project -in_memory -part xc7z010clg400-1
+  set_property board_part_repo_paths {C:/Users/kccistc/AppData/Roaming/Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store} [current_project]
+  set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.cache/wt [current_project]
-  set_property parent.project_path C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.xpr [current_project]
-  set_property ip_output_repo C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.cache/wt [current_project]
+  set_property parent.project_path C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.xpr [current_project]
+  set_property ip_output_repo C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/synth_1/TOP_OV7670_HDMI.dcp
+  add_files -quiet C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/synth_1/TOP_OV7670_HDMI.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/constrs_1/imports/source/Zybo-Z7-Master.xdc
+  read_xdc C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/constrs_1/imports/Zybo_Harman/Zybo-Master.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
-  link_design -top TOP_OV7670_HDMI -part xc7z020clg400-1
+  link_design -top TOP_OV7670_HDMI -part xc7z010clg400-1
 OPTRACE "link_design" END { }
 OPTRACE "gray box cells" START { }
 OPTRACE "gray box cells" END { }

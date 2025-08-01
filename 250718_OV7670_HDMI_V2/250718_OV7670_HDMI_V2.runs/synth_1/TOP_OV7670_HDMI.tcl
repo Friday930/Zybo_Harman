@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/synth_1/TOP_OV7670_HDMI.tcl"
+  variable script "C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/synth_1/TOP_OV7670_HDMI.tcl"
   variable category "vivado_synth"
 }
 
@@ -73,47 +73,48 @@ OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 4
 set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
-create_project -in_memory -part xc7z020clg400-1
+create_project -in_memory -part xc7z010clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.cache/wt [current_project]
-set_property parent.project_path C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.xpr [current_project]
+set_property webtalk.parent_dir C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.cache/wt [current_project]
+set_property parent.project_path C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part digilentinc.com:zybo-z7-20:part0:1.2 [current_project]
-set_property ip_output_repo c:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.cache/ip [current_project]
+set_property board_part_repo_paths {C:/Users/kccistc/AppData/Roaming/Xilinx/Vivado/2020.2/xhub/board_store/xilinx_board_store} [current_project]
+set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
+set_property ip_output_repo c:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
-  C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/DIV_GRID/AreaSel.sv
-  C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/VGA/Frame_Buffer.sv
-  C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/VGA/OV7670_MemController.sv
-  C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/VGA/OV7670_VGA_Display.sv
-  C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/VGA/QVGA_MemController.sv
-  C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/SCCB/SCCB_Master.sv
-  C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/new/TOP_Hand_Signal.sv
-  C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/VGA/VGA_Controller.sv
-  C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/DIV_GRID/hand_signal.sv
-  C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/DIV_GRID/print_grid.sv
-  C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/DIV_GRID/rgb_color_detect.sv
-  C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/TOP/new/TOP_OV7670_HDMI.sv
+  C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/DIV_GRID/AreaSel.sv
+  C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/VGA/Frame_Buffer.sv
+  C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/VGA/OV7670_MemController.sv
+  C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/VGA/OV7670_VGA_Display.sv
+  C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/VGA/QVGA_MemController.sv
+  C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/SCCB/SCCB_Master.sv
+  C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/new/TOP_Hand_Signal.sv
+  C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/VGA/VGA_Controller.sv
+  C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/DIV_GRID/hand_signal.sv
+  C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/DIV_GRID/print_grid.sv
+  C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/DIV_GRID/rgb_color_detect.sv
+  C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/TOP/new/TOP_OV7670_HDMI.sv
 }
 read_verilog -library xil_defaultlib {
-  C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/SPI/SPI_Master_Top.v
-  C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/SPI/btn_debounce.v
+  C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/SPI/SPI_Master_Top.v
+  C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/SPI/btn_debounce.v
 }
 read_vhdl -library xil_defaultlib {
-  C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/HDMI/ClockGen.vhd
-  C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/HDMI/DVI_Constants.vhd
-  C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/HDMI/OutputSERDES.vhd
-  C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/HDMI/SyncAsync.vhd
-  C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/HDMI/ResetBridge.vhd
-  C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/HDMI/SyncAsyncReset.vhd
-  C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/HDMI/TMDS_Encoder.vhd
-  C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/HDMI/rgb2dvi.vhd
+  C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/HDMI/ClockGen.vhd
+  C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/HDMI/DVI_Constants.vhd
+  C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/HDMI/OutputSERDES.vhd
+  C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/HDMI/SyncAsync.vhd
+  C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/HDMI/ResetBridge.vhd
+  C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/HDMI/SyncAsyncReset.vhd
+  C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/HDMI/TMDS_Encoder.vhd
+  C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/sources_1/HDMI/rgb2dvi.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -124,14 +125,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/constrs_1/imports/source/Zybo-Z7-Master.xdc
-set_property used_in_implementation false [get_files C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/constrs_1/imports/source/Zybo-Z7-Master.xdc]
+read_xdc C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/constrs_1/imports/Zybo_Harman/Zybo-Master.xdc
+set_property used_in_implementation false [get_files C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/constrs_1/imports/Zybo_Harman/Zybo-Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top TOP_OV7670_HDMI -part xc7z020clg400-1
+synth_design -top TOP_OV7670_HDMI -part xc7z010clg400-1
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"

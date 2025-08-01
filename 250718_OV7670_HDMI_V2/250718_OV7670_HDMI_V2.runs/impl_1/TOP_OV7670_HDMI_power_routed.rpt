@@ -1,11 +1,11 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Wed Jul 23 17:03:25 2025
+| Date             : Tue Jul 29 11:41:10 2025
 | Host             : DESKTOP-7CFQ9ND running 64-bit major release  (build 9200)
 | Command          : report_power -file TOP_OV7670_HDMI_power_routed.rpt -pb TOP_OV7670_HDMI_power_summary_routed.pb -rpx TOP_OV7670_HDMI_power_routed.rpx
 | Design           : TOP_OV7670_HDMI
-| Device           : xc7z020clg400-1
+| Device           : xc7z010clg400-1
 | Design State     : routed
 | Grade            : commercial
 | Process          : typical
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.431        |
+| Total On-Chip Power (W)  | 0.433        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.317        |
-| Device Static (W)        | 0.114        |
+| Dynamic (W)              | 0.333        |
+| Device Static (W)        | 0.100        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 80.0         |
 | Junction Temperature (C) | 30.0         |
@@ -52,20 +52,20 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.016 |        3 |       --- |             --- |
-| Slice Logic    |     0.004 |    11260 |       --- |             --- |
-|   LUT as Logic |     0.004 |     3895 |     53200 |            7.32 |
-|   CARRY4       |    <0.001 |       66 |     13300 |            0.50 |
-|   Register     |    <0.001 |     5688 |    106400 |            5.35 |
-|   F7/F8 Muxes  |    <0.001 |     1219 |     53200 |            2.29 |
+| Clocks         |     0.014 |        3 |       --- |             --- |
+| Slice Logic    |     0.013 |    11282 |       --- |             --- |
+|   LUT as Logic |     0.012 |     3925 |     17600 |           22.30 |
+|   F7/F8 Muxes  |    <0.001 |     1220 |     17600 |            6.93 |
+|   CARRY4       |    <0.001 |       76 |      4400 |            1.73 |
+|   Register     |    <0.001 |     5675 |     35200 |           16.12 |
 |   BUFG         |    <0.001 |        2 |        32 |            6.25 |
-|   Others       |     0.000 |       54 |       --- |             --- |
-| Signals        |     0.034 |     8573 |       --- |             --- |
-| Block RAM      |     0.061 |     48.5 |       140 |           34.64 |
-| PLL            |     0.065 |        1 |         4 |           25.00 |
-| I/O            |     0.137 |       30 |       125 |           24.00 |
-| Static Power   |     0.114 |          |           |                 |
-| Total          |     0.431 |          |           |                 |
+|   Others       |     0.000 |       55 |       --- |             --- |
+| Signals        |     0.043 |     8566 |       --- |             --- |
+| Block RAM      |     0.061 |     48.5 |        60 |           80.83 |
+| PLL            |     0.065 |        1 |         2 |           50.00 |
+| I/O            |     0.137 |       30 |       100 |           30.00 |
+| Static Power   |     0.100 |          |           |                 |
+| Total          |     0.433 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,8 +75,8 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.123 |       0.113 |      0.010 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.046 |       0.035 |      0.011 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.134 |       0.129 |      0.005 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.041 |       0.035 |      0.006 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.042 |       0.041 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -151,20 +151,19 @@ Table of Contents
 +------------------------------------+-----------+
 | Name                               | Power (W) |
 +------------------------------------+-----------+
-| TOP_OV7670_HDMI                    |     0.317 |
+| TOP_OV7670_HDMI                    |     0.333 |
 |   U_OV7670_Master                  |     0.002 |
-|   U_TOP_Hand_Signal                |     0.018 |
-|     u_hand_signal                  |     0.018 |
-|   u_disp                           |     0.093 |
+|   U_TOP_Hand_Signal                |     0.028 |
+|     u_hand_signal                  |     0.028 |
+|   u_disp                           |     0.099 |
 |     U_Frame_Buffer                 |     0.062 |
-|     U_VGAController                |     0.031 |
-|       U_Pix_counter                |     0.030 |
+|     U_VGAController                |     0.036 |
+|       U_Pix_counter                |     0.036 |
 |   u_rgb2dvi                        |     0.134 |
 |     ClockSerializer                |     0.033 |
 |     DataEncoders[0].DataSerializer |     0.033 |
 |     DataEncoders[1].DataSerializer |     0.033 |
 |     DataEncoders[2].DataSerializer |     0.033 |
-|   u_spi_top                        |     0.001 |
 +------------------------------------+-----------+
 
 

@@ -1,6 +1,6 @@
 module hand_signal #(
-    parameter IMG_WIDTH = 1920,
-    parameter IMG_HEIGHT = 1080,
+    parameter IMG_WIDTH = 320,
+    parameter IMG_HEIGHT = 240,
     parameter NX       = 10,
     parameter NY       = 8,
     parameter ZONES      = NX * NY,

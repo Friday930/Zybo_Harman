@@ -36,23 +36,23 @@ module QVGA_MemController (
     // assign {red_port, green_port, blue_port} = display_en ? {image_data[15:11], image_data[10:5], image_data[4:0]} : 16'b0;
     assign {red_port, green_port, blue_port} = display_en ? {rData[15:11], rData[10:5], rData[4:0]} : 16'b0;
     
-    rom U_rom(
-        .addr(image_addr),
-        .data(image_data)
-    );
+    // rom U_rom(
+    //     .addr(image_addr),
+    //     .data(image_data)
+    // );
 
 endmodule
 
-module rom (
-    input  logic [16:0] addr,
-    output logic [15:0] data
-);
+// module rom (
+//     input  logic [16:0] addr,
+//     output logic [15:0] data
+// );
 
-    logic [15:0] rom[0:320*240-1];
+//     logic [15:0] rom[0:320*240-1];
     
-    initial begin
-        $readmemh("younghee.mem", rom); 
-    end
+//     initial begin
+//         $readmemh("younghee.mem", rom); 
+//     end
 
-    assign data = rom[addr];
-endmodule
+//     assign data = rom[addr];
+// endmodule

@@ -2,37 +2,37 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Jul 23 16:59:30 2025
-# Process ID: 23336
-# Current directory: C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/impl_1
+# Start of session at: Tue Jul 29 11:38:09 2025
+# Process ID: 15496
+# Current directory: C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/impl_1
 # Command line: vivado.exe -log TOP_OV7670_HDMI.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source TOP_OV7670_HDMI.tcl -notrace
-# Log file: C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/impl_1/TOP_OV7670_HDMI.vdi
-# Journal file: C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/impl_1\vivado.jou
+# Log file: C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/impl_1/TOP_OV7670_HDMI.vdi
+# Journal file: C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source TOP_OV7670_HDMI.tcl -notrace
-Command: link_design -top TOP_OV7670_HDMI -part xc7z020clg400-1
+Command: link_design -top TOP_OV7670_HDMI -part xc7z010clg400-1
 Design is defaulting to srcset: sources_1
 Design is defaulting to constrset: constrs_1
-INFO: [Device 21-403] Loading part xc7z020clg400-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1107.754 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 1339 Unisim elements for replacement
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 1106.000 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1350 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 WARNING: [Netlist 29-101] Netlist 'TOP_OV7670_HDMI' is not ideal for floorplanning, since the cellview 'hand_signal' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-479] Netlist was created with Vivado 2020.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/constrs_1/imports/source/Zybo-Z7-Master.xdc]
-Finished Parsing XDC File [C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/constrs_1/imports/source/Zybo-Z7-Master.xdc]
+Parsing XDC File [C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/constrs_1/imports/Zybo_Harman/Zybo-Master.xdc]
+Finished Parsing XDC File [C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.srcs/constrs_1/imports/Zybo_Harman/Zybo-Master.xdc]
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1107.754 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1106.000 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 7 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1107.754 ; gain = 0.000
+link_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1106.000 ; gain = 0.000
 Command: opt_design
-Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
-INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
 Running DRC as a precondition to command opt_design
 
 Starting DRC Task
@@ -40,56 +40,56 @@ INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Project 1-461] DRC finished with 0 Errors
 INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.894 . Memory (MB): peak = 1107.754 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1106.000 ; gain = 0.000
 
 Starting Cache Timing Information Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Cache Timing Information Task | Checksum: 198984178
+Ending Cache Timing Information Task | Checksum: 1fed8f5d6
 
-Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1498.574 ; gain = 390.820
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1465.898 ; gain = 359.898
 
 Starting Logic Optimization Task
 
 Phase 1 Retarget
 INFO: [Opt 31-138] Pushed 4 inverter(s) to 32 load pin(s).
 INFO: [Opt 31-49] Retargeted 0 cell(s).
-Phase 1 Retarget | Checksum: 1767162d8
+Phase 1 Retarget | Checksum: 256ad22f4
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.232 . Memory (MB): peak = 1710.453 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.220 . Memory (MB): peak = 1679.234 ; gain = 0.000
 INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 8 cells
 
 Phase 2 Constant propagation
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Phase 2 Constant propagation | Checksum: 18d4c42ba
+Phase 2 Constant propagation | Checksum: 1f9c3d10f
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.275 . Memory (MB): peak = 1710.453 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.259 . Memory (MB): peak = 1679.234 ; gain = 0.000
 INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
 
 Phase 3 Sweep
-Phase 3 Sweep | Checksum: 1696cceaf
+Phase 3 Sweep | Checksum: 1d96016ad
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.339 . Memory (MB): peak = 1710.453 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.325 . Memory (MB): peak = 1679.234 ; gain = 0.000
 INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
 
 Phase 4 BUFG optimization
 INFO: [Opt 31-194] Inserted BUFG serial_clk_BUFG_inst to drive 8 load(s) on clock net serial_clk_BUFG
 INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
-Phase 4 BUFG optimization | Checksum: 199d09605
+Phase 4 BUFG optimization | Checksum: 22cfa7312
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.407 . Memory (MB): peak = 1710.453 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.393 . Memory (MB): peak = 1679.234 ; gain = 0.000
 INFO: [Opt 31-662] Phase BUFG optimization created 1 cells of which 1 are BUFGs and removed 0 cells.
 
 Phase 5 Shift Register Optimization
 INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
-Phase 5 Shift Register Optimization | Checksum: 199d09605
+Phase 5 Shift Register Optimization | Checksum: 22cfa7312
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.415 . Memory (MB): peak = 1710.453 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.401 . Memory (MB): peak = 1679.234 ; gain = 0.000
 INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
 
 Phase 6 Post Processing Netlist
-Phase 6 Post Processing Netlist | Checksum: 199d09605
+Phase 6 Post Processing Netlist | Checksum: 22cfa7312
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.431 . Memory (MB): peak = 1710.453 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.415 . Memory (MB): peak = 1679.234 ; gain = 0.000
 INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
 Opt_design Change Summary
 =========================
@@ -110,10 +110,10 @@ Opt_design Change Summary
 
 Starting Connectivity Check Task
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1710.453 ; gain = 0.000
-Ending Logic Optimization Task | Checksum: 100682b94
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1679.234 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1f3d8ec6b
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.494 . Memory (MB): peak = 1710.453 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.473 . Memory (MB): peak = 1679.234 ; gain = 0.000
 
 Starting Power Optimization Task
 INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
@@ -130,40 +130,40 @@ INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 49 has
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [Pwropt 34-201] Structural ODC has moved 16 WE to EN ports
 Number of BRAM Ports augmented: 32 newly gated: 16 Total Ports: 98
-Ending PowerOpt Patch Enables Task | Checksum: 7e3021cd
+Ending PowerOpt Patch Enables Task | Checksum: 1a3c845e0
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.344 . Memory (MB): peak = 1833.266 ; gain = 0.000
-Ending Power Optimization Task | Checksum: 7e3021cd
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.322 . Memory (MB): peak = 1803.012 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1a3c845e0
 
-Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1833.266 ; gain = 122.812
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1803.012 ; gain = 123.777
 
 Starting Final Cleanup Task
 
 Starting Logic Optimization Task
 INFO: [Timing 38-35] Done setting XDC timing constraints.
-Ending Logic Optimization Task | Checksum: 111126188
+Ending Logic Optimization Task | Checksum: 1aad824b1
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.451 . Memory (MB): peak = 1833.266 ; gain = 0.000
-Ending Final Cleanup Task | Checksum: 111126188
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.459 . Memory (MB): peak = 1803.012 ; gain = 0.000
+Ending Final Cleanup Task | Checksum: 1aad824b1
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1833.266 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1803.012 ; gain = 0.000
 
 Starting Netlist Obfuscation Task
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1833.266 ; gain = 0.000
-Ending Netlist Obfuscation Task | Checksum: 111126188
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1803.012 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 1aad824b1
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1833.266 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1803.012 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
 33 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 opt_design completed successfully
-opt_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 1833.266 ; gain = 725.512
+opt_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1803.012 ; gain = 697.012
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1833.266 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/impl_1/TOP_OV7670_HDMI_opt.dcp' has been generated.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1803.012 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/impl_1/TOP_OV7670_HDMI_opt.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file TOP_OV7670_HDMI_drc_opted.rpt -pb TOP_OV7670_HDMI_drc_opted.pb -rpx TOP_OV7670_HDMI_drc_opted.rpx
 Command: report_drc -file TOP_OV7670_HDMI_drc_opted.rpt -pb TOP_OV7670_HDMI_drc_opted.pb -rpx TOP_OV7670_HDMI_drc_opted.rpx
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -171,11 +171,11 @@ INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Coretcl 2-168] The results of DRC are in file C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/impl_1/TOP_OV7670_HDMI_drc_opted.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/impl_1/TOP_OV7670_HDMI_drc_opted.rpt.
 report_drc completed successfully
 Command: place_design
-Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
-INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
 INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
 INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
@@ -186,10 +186,10 @@ WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_disp/U_Frame
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[14] (net: u_disp/U_Frame_Buffer/mem_reg_1_3_1[14]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/h_counter_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[14] (net: u_disp/U_Frame_Buffer/mem_reg_1_3_1[14]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/h_counter_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[14] (net: u_disp/U_Frame_Buffer/mem_reg_1_3_1[14]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/v_counter_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[14] (net: u_disp/U_Frame_Buffer/mem_reg_1_3_1[14]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/v_counter_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[14] (net: u_disp/U_Frame_Buffer/mem_reg_1_3_1[14]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/v_counter_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[14] (net: u_disp/U_Frame_Buffer/mem_reg_1_3_1[14]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/v_counter_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[14] (net: u_disp/U_Frame_Buffer/mem_reg_1_3_1[14]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/v_counter_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[14] (net: u_disp/U_Frame_Buffer/mem_reg_1_3_1[14]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/v_counter_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[14] (net: u_disp/U_Frame_Buffer/mem_reg_1_3_1[14]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/v_counter_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[14] (net: u_disp/U_Frame_Buffer/mem_reg_1_3_1[14]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/v_counter_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[15] (net: u_disp/U_Frame_Buffer/ADDRBWRADDR[15]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/h_counter_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[15] (net: u_disp/U_Frame_Buffer/ADDRBWRADDR[15]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/h_counter_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[15] (net: u_disp/U_Frame_Buffer/ADDRBWRADDR[15]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/h_counter_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
@@ -211,54 +211,54 @@ INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 
 Phase 1 Placer Initialization
 
 Phase 1.1 Placer Initialization Netlist Sorting
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1833.266 ; gain = 0.000
-Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 53af25ec
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1803.012 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 16cb98b9f
 
-Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1833.266 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1833.266 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1803.012 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1803.012 ; gain = 0.000
 
 Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
 WARNING: [Place 30-568] A LUT 'u_spi_top/U_Debounce/q_reg[7]_i_2' is driving clock pin of 8 registers. This could lead to large hold time violations. First few involved registers are:
-	u_spi_top/U_Debounce/q_reg_reg[0] {FDCE}
-	u_spi_top/U_Debounce/q_reg_reg[1] {FDCE}
-	u_spi_top/U_Debounce/q_reg_reg[2] {FDCE}
 	u_spi_top/U_Debounce/q_reg_reg[3] {FDCE}
-	u_spi_top/U_Debounce/q_reg_reg[4] {FDCE}
-Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 14743580e
+	u_spi_top/U_Debounce/q_reg_reg[7] {FDCE}
+	u_spi_top/U_Debounce/q_reg_reg[6] {FDCE}
+	u_spi_top/U_Debounce/q_reg_reg[5] {FDCE}
+	u_spi_top/U_Debounce/q_reg_reg[0] {FDCE}
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 16e8588e0
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.612 . Memory (MB): peak = 1833.266 ; gain = 0.000
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.346 . Memory (MB): peak = 1803.012 ; gain = 0.000
 
 Phase 1.3 Build Placer Netlist Model
-Phase 1.3 Build Placer Netlist Model | Checksum: 18cee53cc
+Phase 1.3 Build Placer Netlist Model | Checksum: 25468a639
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1833.266 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1803.012 ; gain = 0.000
 
 Phase 1.4 Constrain Clocks/Macros
-Phase 1.4 Constrain Clocks/Macros | Checksum: 18cee53cc
+Phase 1.4 Constrain Clocks/Macros | Checksum: 25468a639
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1833.266 ; gain = 0.000
-Phase 1 Placer Initialization | Checksum: 18cee53cc
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1803.012 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 25468a639
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1833.266 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1803.012 ; gain = 0.000
 
 Phase 2 Global Placement
 
 Phase 2.1 Floorplanning
-Phase 2.1 Floorplanning | Checksum: 180356d6c
+Phase 2.1 Floorplanning | Checksum: 232908385
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1833.266 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1803.012 ; gain = 0.000
 
 Phase 2.2 Update Timing before SLR Path Opt
-Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1eeae552a
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1e98f6ea1
 
-Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1833.266 ; gain = 0.000
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1803.012 ; gain = 0.000
 
 Phase 2.3 Global Placement Core
 
 Phase 2.3.1 Physical Synthesis In Placer
-INFO: [Physopt 32-1035] Found 20 LUTNM shape to break, 164 LUT instances to create LUTNM shape
-INFO: [Physopt 32-1044] Break lutnm for timing: one critical 15, two critical 5, total 20, new lutff created 0
-INFO: [Physopt 32-775] End 1 Pass. Optimized 98 nets or cells. Created 20 new cells, deleted 78 existing cells and moved 0 existing cell
+INFO: [Physopt 32-1035] Found 28 LUTNM shape to break, 156 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 6, two critical 22, total 28, new lutff created 0
+INFO: [Physopt 32-775] End 1 Pass. Optimized 104 nets or cells. Created 28 new cells, deleted 76 existing cells and moved 0 existing cell
 INFO: [Physopt 32-65] No nets found for high-fanout optimization.
 INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
@@ -274,7 +274,7 @@ INFO: [Physopt 32-846] No candidate cells for URAM register optimization found i
 INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
 INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
 INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1833.266 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1803.012 ; gain = 0.000
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -283,7 +283,7 @@ Summary of Physical Synthesis Optimizations
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 |  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
-|  LUT Combining                                    |           20  |             78  |                    98  |           0  |           1  |  00:00:00  |
+|  LUT Combining                                    |           28  |             76  |                   104  |           0  |           1  |  00:00:00  |
 |  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
@@ -291,69 +291,69 @@ Summary of Physical Synthesis Optimizations
 |  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
 |  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Total                                            |           20  |             78  |                    98  |           0  |           8  |  00:00:00  |
+|  Total                                            |           28  |             76  |                   104  |           0  |           8  |  00:00:00  |
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Phase 2.3.1 Physical Synthesis In Placer | Checksum: f6a8abc4
+Phase 2.3.1 Physical Synthesis In Placer | Checksum: 18dc9c8c8
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1833.266 ; gain = 0.000
-Phase 2.3 Global Placement Core | Checksum: 237f92796
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1803.012 ; gain = 0.000
+Phase 2.3 Global Placement Core | Checksum: 125afffa5
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1833.266 ; gain = 0.000
-Phase 2 Global Placement | Checksum: 237f92796
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1803.012 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 125afffa5
 
-Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1833.266 ; gain = 0.000
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1803.012 ; gain = 0.000
 
 Phase 3 Detail Placement
 
 Phase 3.1 Commit Multi Column Macros
-Phase 3.1 Commit Multi Column Macros | Checksum: 205415fd5
+Phase 3.1 Commit Multi Column Macros | Checksum: ef7e3c1e
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1833.266 ; gain = 0.000
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1803.012 ; gain = 0.000
 
 Phase 3.2 Commit Most Macros & LUTRAMs
-Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 23c975b02
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 12832f677
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1833.266 ; gain = 0.000
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1803.012 ; gain = 0.000
 
 Phase 3.3 Area Swap Optimization
-Phase 3.3 Area Swap Optimization | Checksum: 200a05899
+Phase 3.3 Area Swap Optimization | Checksum: 1c3408a07
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1833.266 ; gain = 0.000
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1803.012 ; gain = 0.000
 
 Phase 3.4 Pipeline Register Optimization
-Phase 3.4 Pipeline Register Optimization | Checksum: 1c124789c
+Phase 3.4 Pipeline Register Optimization | Checksum: 1519a23be
 
-Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 1833.266 ; gain = 0.000
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1803.012 ; gain = 0.000
 
 Phase 3.5 Fast Optimization
-Phase 3.5 Fast Optimization | Checksum: 22daf5220
+Phase 3.5 Fast Optimization | Checksum: f3a2ff58
 
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1833.266 ; gain = 0.000
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 1803.012 ; gain = 0.000
 
 Phase 3.6 Small Shape Detail Placement
-Phase 3.6 Small Shape Detail Placement | Checksum: 20c0e692b
+Phase 3.6 Small Shape Detail Placement | Checksum: 1fe07e7a4
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:19 . Memory (MB): peak = 1833.266 ; gain = 0.000
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1803.012 ; gain = 0.000
 
 Phase 3.7 Re-assign LUT pins
-Phase 3.7 Re-assign LUT pins | Checksum: 15d3de446
+Phase 3.7 Re-assign LUT pins | Checksum: 14a93d453
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 1833.266 ; gain = 0.000
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1803.012 ; gain = 0.000
 
 Phase 3.8 Pipeline Register Optimization
-Phase 3.8 Pipeline Register Optimization | Checksum: 19dba0449
+Phase 3.8 Pipeline Register Optimization | Checksum: 187297976
 
-Time (s): cpu = 00:00:22 ; elapsed = 00:00:19 . Memory (MB): peak = 1833.266 ; gain = 0.000
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1803.012 ; gain = 0.000
 
 Phase 3.9 Fast Optimization
-Phase 3.9 Fast Optimization | Checksum: 1ac53707e
+Phase 3.9 Fast Optimization | Checksum: 229bd51dd
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 1833.266 ; gain = 0.000
-Phase 3 Detail Placement | Checksum: 1ac53707e
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 1803.012 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 229bd51dd
 
-Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 1833.266 ; gain = 0.000
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:21 . Memory (MB): peak = 1803.012 ; gain = 0.000
 
 Phase 4 Post Placement Optimization and Clean-Up
 
@@ -361,7 +361,7 @@ Phase 4.1 Post Commit Optimization
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 
 Phase 4.1.1 Post Placement Optimization
-Post Placement Optimization Initialization | Checksum: 11d690284
+Post Placement Optimization Initialization | Checksum: 116c0c106
 
 Phase 4.1.1.1 BUFG Insertion
 
@@ -369,28 +369,28 @@ Starting Physical Synthesis Task
 
 Phase 1 Physical Synthesis Initialization
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.071 | TNS=-115.346 |
-Phase 1 Physical Synthesis Initialization | Checksum: 1c8c13e5b
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.990 | TNS=-165.075 |
+Phase 1 Physical Synthesis Initialization | Checksum: 9c7ff4f6
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.283 . Memory (MB): peak = 1833.266 ; gain = 0.000
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.246 . Memory (MB): peak = 1803.012 ; gain = 0.000
 INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
-Ending Physical Synthesis Task | Checksum: 16ce0c141
+Ending Physical Synthesis Task | Checksum: 116b78457
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.322 . Memory (MB): peak = 1833.266 ; gain = 0.000
-Phase 4.1.1.1 BUFG Insertion | Checksum: 11d690284
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.284 . Memory (MB): peak = 1803.012 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 116c0c106
 
-Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 1833.266 ; gain = 0.000
-INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.450. For the most accurate timing information please run report_timing.
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 1803.012 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.624. For the most accurate timing information please run report_timing.
 
-Time (s): cpu = 00:01:20 ; elapsed = 00:01:19 . Memory (MB): peak = 1833.266 ; gain = 0.000
-Phase 4.1 Post Commit Optimization | Checksum: 22f502b44
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:47 . Memory (MB): peak = 1803.012 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 15b885e2c
 
-Time (s): cpu = 00:01:20 ; elapsed = 00:01:19 . Memory (MB): peak = 1833.266 ; gain = 0.000
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:47 . Memory (MB): peak = 1803.012 ; gain = 0.000
 
 Phase 4.2 Post Placement Cleanup
-Phase 4.2 Post Placement Cleanup | Checksum: 22f502b44
+Phase 4.2 Post Placement Cleanup | Checksum: 15b885e2c
 
-Time (s): cpu = 00:01:20 ; elapsed = 00:01:19 . Memory (MB): peak = 1833.266 ; gain = 0.000
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:47 . Memory (MB): peak = 1803.012 ; gain = 0.000
 
 Phase 4.3 Placer Reporting
 
@@ -400,7 +400,7 @@ INFO: [Place 30-612] Post-Placement Estimated Congestion
 |           | Global Congestion | Short Congestion  |
 | Direction | Region Size       | Region Size       |
 |___________|___________________|___________________|
-|      North|                1x1|                1x1|
+|      North|                1x1|                2x2|
 |___________|___________________|___________________|
 |      South|                1x1|                1x1|
 |___________|___________________|___________________|
@@ -409,74 +409,87 @@ INFO: [Place 30-612] Post-Placement Estimated Congestion
 |       West|                1x1|                1x1|
 |___________|___________________|___________________|
 
-Phase 4.3.1 Print Estimated Congestion | Checksum: 22f502b44
+Phase 4.3.1 Print Estimated Congestion | Checksum: 15b885e2c
 
-Time (s): cpu = 00:01:20 ; elapsed = 00:01:19 . Memory (MB): peak = 1833.266 ; gain = 0.000
-Phase 4.3 Placer Reporting | Checksum: 22f502b44
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:47 . Memory (MB): peak = 1803.012 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 15b885e2c
 
-Time (s): cpu = 00:01:20 ; elapsed = 00:01:19 . Memory (MB): peak = 1833.266 ; gain = 0.000
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:47 . Memory (MB): peak = 1803.012 ; gain = 0.000
 
 Phase 4.4 Final Placement Cleanup
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1833.266 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1803.012 ; gain = 0.000
 
-Time (s): cpu = 00:01:20 ; elapsed = 00:01:19 . Memory (MB): peak = 1833.266 ; gain = 0.000
-Phase 4 Post Placement Optimization and Clean-Up | Checksum: 27c4b1dba
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:47 . Memory (MB): peak = 1803.012 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 195f910d5
 
-Time (s): cpu = 00:01:20 ; elapsed = 00:01:19 . Memory (MB): peak = 1833.266 ; gain = 0.000
-Ending Placer Task | Checksum: 1b7823ce3
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:47 . Memory (MB): peak = 1803.012 ; gain = 0.000
+Ending Placer Task | Checksum: d309dffa
 
-Time (s): cpu = 00:01:20 ; elapsed = 00:01:19 . Memory (MB): peak = 1833.266 ; gain = 0.000
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:47 . Memory (MB): peak = 1803.012 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
 75 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
 place_design completed successfully
-place_design: Time (s): cpu = 00:01:21 ; elapsed = 00:01:20 . Memory (MB): peak = 1833.266 ; gain = 0.000
+place_design: Time (s): cpu = 00:00:54 ; elapsed = 00:00:48 . Memory (MB): peak = 1803.012 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.810 . Memory (MB): peak = 1833.266 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/impl_1/TOP_OV7670_HDMI_placed.dcp' has been generated.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.652 . Memory (MB): peak = 1803.012 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/impl_1/TOP_OV7670_HDMI_placed.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_io -file TOP_OV7670_HDMI_io_placed.rpt
-report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1833.266 ; gain = 0.000
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1803.012 ; gain = 0.000
 INFO: [runtcl-4] Executing : report_utilization -file TOP_OV7670_HDMI_utilization_placed.rpt -pb TOP_OV7670_HDMI_utilization_placed.pb
 INFO: [runtcl-4] Executing : report_control_sets -verbose -file TOP_OV7670_HDMI_control_sets_placed.rpt
-report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1833.266 ; gain = 0.000
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1803.012 ; gain = 0.000
 Command: phys_opt_design
-Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
-INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1833.266 ; gain = 0.000
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1803.012 ; gain = 0.000
 
 Starting Physical Synthesis Task
 
 Phase 1 Physical Synthesis Initialization
 INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.408 | TNS=-7.982 |
-Phase 1 Physical Synthesis Initialization | Checksum: 1769b7585
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.624 | TNS=-45.375 |
+Phase 1 Physical Synthesis Initialization | Checksum: e59fcf3d
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.619 . Memory (MB): peak = 1833.266 ; gain = 0.000
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.408 | TNS=-7.982 |
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.894 . Memory (MB): peak = 1803.012 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.624 | TNS=-45.375 |
 
 Phase 2 DSP Register Optimization
 INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
 INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
-Phase 2 DSP Register Optimization | Checksum: 1769b7585
+Phase 2 DSP Register Optimization | Checksum: e59fcf3d
 
-Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.638 . Memory (MB): peak = 1833.266 ; gain = 0.000
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.918 . Memory (MB): peak = 1803.012 ; gain = 0.000
 
 Phase 3 Critical Path Optimization
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.408 | TNS=-7.982 |
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2[0].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/max_zone_color2_reg[0]
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[59]_59[0].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[59][0]
-INFO: [Physopt 32-572] Net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[59]_59[0] was not replicated.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.624 | TNS=-45.375 |
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color1_reg_n_0_[3].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/max_zone_color1_reg[3]
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color1_reg_n_0_[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg_n_0_[15][0].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg[15][0]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg_n_0_[15][0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.586 | TNS=-39.280 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2_reg[1]_rep_n_0.  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/max_zone_color2_reg[1]_rep
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2_reg[1]_rep_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.586 | TNS=-39.165 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2_reg[2]_rep__1_n_0.  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/max_zone_color2_reg[2]_rep__1
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2_reg[2]_rep__1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.586 | TNS=-39.050 |
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2[4].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/max_zone_color2_reg[4]
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[30]_30[0].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[30][0]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[30]_30[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.576 | TNS=-37.331 |
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[30]_30[0].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[30][0]
+INFO: [Physopt 32-572] Net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[30]_30[0] was not replicated.
 Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[59]_59[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[30]_30[0]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2[6]_i_11_0[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2[6]_i_11_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.399 | TNS=-7.838 |
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2[6]_i_10_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][28]_i_6_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2[6]_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][31]_i_7_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][28]_i_2_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][24]_i_2_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][20]_i_2_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][16]_i_2_n_0. Optimizations did not improve timing on the net.
@@ -485,272 +498,194 @@ INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_
 INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][4]_i_2_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][4]_i_3
 INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/h_counter_reg[9]_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][0]_i_6_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_14_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_28_n_0.  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_28
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_28_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.364 | TNS=-6.568 |
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/h_counter_reg[8]_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][0]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_19_n_0.  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_19
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_19_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.567 | TNS=-35.905 |
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg_n_0_[14][0].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg[14][0]
+INFO: [Physopt 32-572] Net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg_n_0_[14][0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg_n_0_[14][0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color1[6]_i_13_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color1[6]_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1[0][28]_i_6_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg[0][24]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg[0][20]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg[0][16]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg[0][12]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg[0][8]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg[0][4]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1[0].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color1[0][4]_i_3
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/h_counter_reg[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg[0][0]_i_7_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1[0][0]_i_16_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.567 | TNS=-30.527 |
 INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[63]_63[0].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[63][0]
 INFO: [Physopt 32-572] Net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[63]_63[0] was not replicated.
 Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
 INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[63]_63[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_27_n_0.  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_27
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_27_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.348 | TNS=-6.258 |
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][0]_i_6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_14_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.550 | TNS=-23.756 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg_n_0_[47][1].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg[47][1]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg_n_0_[47][1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.545 | TNS=-23.660 |
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg_n_0_[46][1].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg[46][1]
+INFO: [Physopt 32-572] Net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg_n_0_[46][1] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg_n_0_[46][1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg[0][4]_i_19_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg[0][4]_i_43_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1[0][4]_i_58_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.533 | TNS=-23.438 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg_n_0_[63][6].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg[63][6]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg_n_0_[63][6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.514 | TNS=-22.898 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31]_31[0].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31][0]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31]_31[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.511 | TNS=-22.580 |
 INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31]_31[0].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31][0]
 INFO: [Physopt 32-572] Net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31]_31[0] was not replicated.
 Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
 INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31]_31[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][0]_i_5_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_12_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.342 | TNS=-6.143 |
-INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[63]_63[7].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[63][7]
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[63]_63[7]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.340 | TNS=-6.107 |
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[27]_27[4].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[27][4]
-INFO: [Physopt 32-572] Net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[27]_27[4] was not replicated.
-Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[27]_27[4]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[4]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][4]_i_10_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][4]_i_24_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][4]_i_45_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.340 | TNS=-6.107 |
-INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[59]_59[3].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[59][3]
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[59]_59[3]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.337 | TNS=-6.053 |
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[63]_63[8].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[63][8]
-INFO: [Physopt 32-572] Net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[63]_63[8] was not replicated.
-Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[63]_63[8]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[8]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][8]_i_9_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][8]_i_24_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][8]_i_46_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.335 | TNS=-6.017 |
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_12_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_19_n_0.  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_19
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_19_n_0.  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_19
 INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_19_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.326 | TNS=-5.855 |
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[11]_11[0].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[11][0]
-INFO: [Physopt 32-572] Net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[11]_11[0] was not replicated.
-Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[11]_11[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_11_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_16_n_0.  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_16
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_16_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.325 | TNS=-5.837 |
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[58]_58[4].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[58][4]
-INFO: [Physopt 32-572] Net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[58]_58[4] was not replicated.
-Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[58]_58[4]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][4]_i_25_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][4]_i_47_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.309 | TNS=-5.500 |
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[11]_11[20].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[11][20]
-INFO: [Physopt 32-572] Net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[11]_11[20] was not replicated.
-Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[11]_11[20]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[20]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][20]_i_9_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][20]_i_23_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][20]_i_43_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.308 | TNS=-5.483 |
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[7]_7[0].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[7][0]
-INFO: [Physopt 32-572] Net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[7]_7[0] was not replicated.
-Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[7]_7[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_17_n_0.  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_17
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_17_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.306 | TNS=-5.398 |
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[11]_11[8].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[11][8]
-INFO: [Physopt 32-81] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[11]_11[8]. Replicated 1 times.
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[11]_11[8]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.303 | TNS=-5.345 |
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[59]_59[3].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[59][3]
-INFO: [Physopt 32-81] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[59]_59[3]. Replicated 1 times.
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[59]_59[3]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.298 | TNS=-5.255 |
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[59]_59[3]_repN.  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[59][3]_replica
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[59]_59[3]_repN. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[3]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][4]_i_13_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][4]_i_31_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][4]_i_51_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.298 | TNS=-5.255 |
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[57]_57[0].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[57][0]
-INFO: [Physopt 32-81] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[57]_57[0]. Replicated 1 times.
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[57]_57[0]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.297 | TNS=-5.236 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.509 | TNS=-22.373 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[9]_9[4].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[9][4]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[9]_9[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.509 | TNS=-22.373 |
 INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[47]_47[0].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[47][0]
 INFO: [Physopt 32-572] Net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[47]_47[0] was not replicated.
 Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
 INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[47]_47[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_13_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_23_n_0.  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_23
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_23_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.289 | TNS=-5.100 |
-INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[15]_15[11].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[15][11]
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[15]_15[11]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.284 | TNS=-5.015 |
-INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[46]_46[4].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[46][4]
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[46]_46[4]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.279 | TNS=-4.926 |
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31]_31[5].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31][5]
-INFO: [Physopt 32-572] Net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31]_31[5] was not replicated.
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_13_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.507 | TNS=-22.173 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[46]_46[15].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[46][15]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[46]_46[15]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.503 | TNS=-21.688 |
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg_n_0_[47][0].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg[47][0]
+INFO: [Physopt 32-572] Net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg_n_0_[47][0] was not replicated.
 Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31]_31[5]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[5]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][8]_i_18_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][8]_i_41_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][8]_i_56_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][8]_i_111_n_0.  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][8]_i_111
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][8]_i_111_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.278 | TNS=-4.909 |
-INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[59]_59[20].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[59][20]
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[59]_59[20]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.277 | TNS=-4.892 |
-INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[22]_22[5].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[22][5]
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[22]_22[5]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.276 | TNS=-4.868 |
-INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[15]_15[1].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[15][1]
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[15]_15[1]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.269 | TNS=-4.756 |
-INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[42]_42[3].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[42][3]
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[42]_42[3]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.268 | TNS=-4.739 |
-INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[13]_13[0].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[13][0]
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[13]_13[0]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.259 | TNS=-4.586 |
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[11]_11[4].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[11][4]
-INFO: [Physopt 32-572] Net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[11]_11[4] was not replicated.
-Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[11]_11[4]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][4]_i_44_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][4]_i_61_n_0.  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][4]_i_61
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][4]_i_61_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.257 | TNS=-4.552 |
-INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[14]_14[3].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[14][3]
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[14]_14[3]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.256 | TNS=-4.535 |
-INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[54]_54[6].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[54][6]
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[54]_54[6]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.251 | TNS=-4.450 |
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[15]_15[6].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[15][6]
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[15]_15[6]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[6]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][8]_i_15_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][8]_i_35_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][8]_i_51_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.251 | TNS=-4.450 |
-INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31]_31[12].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31][12]
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31]_31[12]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.248 | TNS=-4.399 |
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[26]_26[5].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[26][5]
-INFO: [Physopt 32-572] Net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[26]_26[5] was not replicated.
-Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[26]_26[5]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][8]_i_112_n_0.  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][8]_i_112
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][8]_i_112_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.248 | TNS=-4.399 |
-INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[42]_42[8].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[42][8]
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[42]_42[8]. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.245 | TNS=-4.348 |
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[15]_15[1].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[15][1]
-INFO: [Physopt 32-572] Net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[15]_15[1] was not replicated.
-Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[15]_15[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg_n_0_[47][0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg[0][0]_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1[0][0]_i_18_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1[0][0]_i_28_n_0.  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color1[0][0]_i_28
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1[0][0]_i_28_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net u_disp/U_VGAController/U_Pix_counter/is_blue_reg_79.  Re-placed instance u_disp/U_VGAController/U_Pix_counter/max_zone_color1[6]_i_1
+INFO: [Physopt 32-735] Processed net u_disp/U_VGAController/U_Pix_counter/is_blue_reg_79. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.502 | TNS=-22.830 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31]_31[1].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31][1]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31]_31[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.501 | TNS=-22.735 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[14]_14[1].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[14][1]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[14]_14[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.500 | TNS=-22.641 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[62]_62[16].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[62][16]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[62]_62[16]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.499 | TNS=-22.544 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[15]_15[15].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[15][15]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[15]_15[15]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.498 | TNS=-22.450 |
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2[4].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/max_zone_color2_reg[4]
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[13]_13[12].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[13][12]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[13]_13[12]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.495 | TNS=-22.168 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[29]_29[16].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[29][16]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[29]_29[16]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.495 | TNS=-22.168 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[62]_62[1].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[62][1]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[62]_62[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.495 | TNS=-22.168 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[27]_27[5].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[27][5]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[27]_27[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.494 | TNS=-22.076 |
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[14]_14[1].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[14][1]
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[14]_14[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2[6]_i_11_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2[6]_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][31]_i_7_0[2]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[1]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][4]_i_19_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][4]_i_42_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][4]_i_56_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][4]_i_108_n_0.  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][4]_i_108
 INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][4]_i_108_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.244 | TNS=-4.331 |
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[27]_27[6].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[27][6]
-INFO: [Physopt 32-572] Net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[27]_27[6] was not replicated.
-Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[27]_27[6]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][8]_i_52_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.244 | TNS=-4.331 |
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[14]_14[3].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[14][3]
-INFO: [Physopt 32-572] Net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[14]_14[3] was not replicated.
-Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[14]_14[3]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][4]_i_30_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][4]_i_48_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.243 | TNS=-4.314 |
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2[0].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/max_zone_color2_reg[0]
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[57]_57[0]_repN.  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[57][0]_replica
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[57]_57[0]_repN. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2[6]_i_11_0[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2[6]_i_10_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][28]_i_6_0[2]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][4]_i_3
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/h_counter_reg[9]_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][0]_i_6_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_14_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_28_n_0.  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_28
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_28_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-663] Processed net u_disp/U_VGAController/U_Pix_counter/is_red_reg_79.  Re-placed instance u_disp/U_VGAController/U_Pix_counter/max_zone_color2[6]_i_1
-INFO: [Physopt 32-735] Processed net u_disp/U_VGAController/U_Pix_counter/is_red_reg_79. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.150 | TNS=-2.786 |
-INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color1_reg[1]_rep_n_0.  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/max_zone_color1_reg[1]_rep
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color1_reg[1]_rep_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.150 | TNS=-2.659 |
-INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color1_reg[1]_rep__1_n_0.  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/max_zone_color1_reg[1]_rep__1
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color1_reg[1]_rep__1_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.150 | TNS=-2.532 |
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color1_reg[2]_rep_n_0.  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/max_zone_color1_reg[2]_rep
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color1_reg[2]_rep_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg_n_0_[26][0].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg[26][0]
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg_n_0_[26][0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color1[6]_i_13_0[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color1[6]_i_10_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1[0][31]_i_14_0[2]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1[0].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color1[0][4]_i_3
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/h_counter_reg[9]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg[0][0]_i_7_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1[0][0]_i_17_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.132 | TNS=-2.210 |
-INFO: [Physopt 32-663] Processed net u_disp/U_VGAController/U_Pix_counter/is_red_reg_79.  Re-placed instance u_disp/U_VGAController/U_Pix_counter/max_zone_color2[6]_i_1
-INFO: [Physopt 32-735] Processed net u_disp/U_VGAController/U_Pix_counter/is_red_reg_79. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.103 | TNS=-1.754 |
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg_n_0_[31][1].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg[31][1]
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg_n_0_[31][1]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1[1]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg[0][4]_i_19_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg[0][4]_i_42_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1[0][4]_i_57_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.096 | TNS=-1.740 |
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg_n_0_[13][1].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg[13][1]
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg_n_0_[13][1]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1[0][4]_i_56_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1[0][4]_i_108_n_0.  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color1[0][4]_i_108
-INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1[0][4]_i_108_n_0. Optimization improves timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.096 | TNS=-1.728 |
-INFO: [Physopt 32-662] Processed net u_disp/U_VGAController/U_Pix_counter/is_red_reg_79.  Did not re-place instance u_disp/U_VGAController/U_Pix_counter/max_zone_color2[6]_i_1
-INFO: [Physopt 32-702] Processed net u_disp/U_VGAController/U_Pix_counter/is_red_reg_79. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net clk_IBUF. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net clk. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.096 | TNS=-1.728 |
-Phase 3 Critical Path Optimization | Checksum: 1769b7585
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.490 | TNS=-21.709 |
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[27]_27[2].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[27][2]
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[27]_27[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][4]_i_16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][4]_i_36_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][4]_i_53_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.489 | TNS=-21.618 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[63]_63[1].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[63][1]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[63]_63[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.489 | TNS=-21.618 |
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31]_31[1].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31][1]
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31]_31[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][4]_i_57_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.484 | TNS=-21.174 |
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[46]_46[1].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[46][1]
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[46]_46[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][4]_i_43_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][4]_i_58_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.483 | TNS=-20.999 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color1_reg_n_0_[0].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/max_zone_color1_reg[0]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color1_reg_n_0_[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.483 | TNS=-20.995 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.483 | TNS=-20.995 |
+Phase 3 Critical Path Optimization | Checksum: e59fcf3d
 
-Time (s): cpu = 00:00:23 ; elapsed = 00:00:12 . Memory (MB): peak = 1833.266 ; gain = 0.000
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 1803.012 ; gain = 0.000
 
 Phase 4 Critical Path Optimization
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.096 | TNS=-1.728 |
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2[0].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/max_zone_color2_reg[0]
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[57]_57[0]_repN.  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[57][0]_replica
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[57]_57[0]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.483 | TNS=-20.995 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color1_reg[0]_rep__1_n_0.  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/max_zone_color1_reg[0]_rep__1
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color1_reg[0]_rep__1_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.483 | TNS=-20.991 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color1_reg_n_0_[1].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/max_zone_color1_reg[1]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color1_reg_n_0_[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.483 | TNS=-20.987 |
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color1_reg[1]_rep__1_n_0.  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/max_zone_color1_reg[1]_rep__1
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color1_reg[1]_rep__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg_n_0_[47][0].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg[47][0]
+INFO: [Physopt 32-572] Net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg_n_0_[47][0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg_n_0_[47][0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color1[6]_i_13_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color1[6]_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1[0][28]_i_6_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg[0][24]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg[0][20]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg[0][16]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg[0][12]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg[0][8]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg[0][4]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1[0].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color1[0][4]_i_3
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/h_counter_reg[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1_reg[0][0]_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1[0][0]_i_18_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1[0][0]_i_28_n_0.  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color1[0][0]_i_28
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color1[0][0]_i_28_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-601] Processed net u_disp/U_VGAController/U_Pix_counter/is_blue_reg_79. Net driver u_disp/U_VGAController/U_Pix_counter/max_zone_color1[6]_i_1 was replaced.
+INFO: [Physopt 32-735] Processed net u_disp/U_VGAController/U_Pix_counter/is_blue_reg_79. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.482 | TNS=-18.935 |
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2[4].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/max_zone_color2_reg[4]
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[14]_14[0].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[14][0]
+INFO: [Physopt 32-572] Net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[14]_14[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[14]_14[0]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2[6]_i_11_0[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2[6]_i_10_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][28]_i_6_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2[6]_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][31]_i_7_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][28]_i_2_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][24]_i_2_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][20]_i_2_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][16]_i_2_n_0. Optimizations did not improve timing on the net.
@@ -759,43 +694,184 @@ INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_
 INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][4]_i_2_n_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][4]_i_3
 INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/h_counter_reg[9]_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/h_counter_reg[8]_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][0]_i_5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_11_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_15_n_0.  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_15
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_15_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.479 | TNS=-18.677 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[23]_23[11].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[23][11]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[23]_23[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.477 | TNS=-18.506 |
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[63]_63[1].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[63][1]
+INFO: [Physopt 32-572] Net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[63]_63[1] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[63]_63[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][4]_i_19_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][4]_i_43_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][4]_i_59_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.474 | TNS=-18.249 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[8]_8[4].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[8][4]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[8]_8[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.469 | TNS=-17.828 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[11]_11[2].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[11][2]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[11]_11[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.466 | TNS=-17.584 |
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[63]_63[0].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[63][0]
+INFO: [Physopt 32-572] Net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[63]_63[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[63]_63[0]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][0]_i_6_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_14_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_28_n_0.  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_28
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_28_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-572] Net u_disp/U_VGAController/U_Pix_counter/is_red_reg_79 was not replicated.
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_14_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.463 | TNS=-17.344 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[62]_62[11].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[62][11]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[62]_62[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.462 | TNS=-17.264 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[14]_14[2].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[14][2]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[14]_14[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.461 | TNS=-17.184 |
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[9]_9[4].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[9][4]
+INFO: [Physopt 32-572] Net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[9]_9[4] was not replicated.
 Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
-INFO: [Physopt 32-662] Processed net u_disp/U_VGAController/U_Pix_counter/is_red_reg_79.  Did not re-place instance u_disp/U_VGAController/U_Pix_counter/max_zone_color2[6]_i_1
-INFO: [Physopt 32-572] Net u_disp/U_VGAController/U_Pix_counter/is_red_reg_79 was not replicated.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[9]_9[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][4]_i_10_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][4]_i_24_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][4]_i_44_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.454 | TNS=-16.641 |
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[58]_58[1].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[58][1]
+INFO: [Physopt 32-81] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[58]_58[1]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[58]_58[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.454 | TNS=-16.641 |
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[41]_41[1].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[41][1]
+INFO: [Physopt 32-572] Net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[41]_41[1] was not replicated.
 Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
-INFO: [Physopt 32-702] Processed net u_disp/U_VGAController/U_Pix_counter/is_red_reg_79. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net clk_IBUF. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net clk. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2[0].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/max_zone_color2_reg[0]
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[57]_57[0]_repN.  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[57][0]_replica
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[57]_57[0]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[41]_41[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][4]_i_58_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.452 | TNS=-16.493 |
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[58]_58[16].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[58][16]
+INFO: [Physopt 32-81] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[58]_58[16]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[58]_58[16]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.452 | TNS=-16.266 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[26]_26[5].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[26][5]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[26]_26[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.448 | TNS=-15.971 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[43]_43[3].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[43][3]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[43]_43[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.447 | TNS=-15.898 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[45]_45[15].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[45][15]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[45]_45[15]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.443 | TNS=-15.606 |
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[58]_58[1]_repN.  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[58][1]_replica
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[58]_58[1]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][4]_i_59_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.436 | TNS=-15.098 |
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[10]_10[1].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[10][1]
+INFO: [Physopt 32-572] Net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[10]_10[1] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[10]_10[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][4]_i_42_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][4]_i_56_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][4]_i_109_n_0.  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][4]_i_109
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][4]_i_109_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.432 | TNS=-14.817 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[15]_15[21].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[15][21]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[15]_15[21]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.430 | TNS=-14.677 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[63]_63[2].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[63][2]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[63]_63[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.430 | TNS=-14.677 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[15]_15[8].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[15][8]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[15]_15[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.428 | TNS=-14.541 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[29]_29[16].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[29][16]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[29]_29[16]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.428 | TNS=-14.541 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[22]_22[11].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[22][11]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[22]_22[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.427 | TNS=-14.465 |
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31]_31[24].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31][24]
+INFO: [Physopt 32-81] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31]_31[24]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31]_31[24]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.425 | TNS=-14.338 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31]_31[12].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31][12]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31]_31[12]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.424 | TNS=-14.270 |
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[10]_10[0].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[10][0]
+INFO: [Physopt 32-572] Net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[10]_10[0] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[10]_10[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_16_n_0.  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_16
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_16_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.423 | TNS=-14.204 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[58]_58[11].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[58][11]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[58]_58[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.423 | TNS=-14.204 |
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2[4].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/max_zone_color2_reg[4]
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[11]_11[12].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[11][12]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[11]_11[12]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.423 | TNS=-14.204 |
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[43]_43[0].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[43][0]
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[43]_43[0]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2[6]_i_11_0[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2[6]_i_10_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][28]_i_6_0[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/max_zone_color2[6]_i_8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][31]_i_7_0[2]. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][4]_i_3
 INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0]. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/h_counter_reg[9]_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/h_counter_reg[8]_0. Optimizations did not improve timing on the net.
 INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][0]_i_6_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_14_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_28_n_0.  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_28
-INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_28_n_0. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-662] Processed net u_disp/U_VGAController/U_Pix_counter/is_red_reg_79.  Did not re-place instance u_disp/U_VGAController/U_Pix_counter/max_zone_color2[6]_i_1
-INFO: [Physopt 32-702] Processed net u_disp/U_VGAController/U_Pix_counter/is_red_reg_79. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net clk_IBUF. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-702] Processed net clk. Optimizations did not improve timing on the net.
-INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.096 | TNS=-1.728 |
-Phase 4 Critical Path Optimization | Checksum: 1769b7585
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_13_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_24_n_0.  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_24
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_24_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.422 | TNS=-14.139 |
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[58]_58[1]_repN.  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[58][1]_replica
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[58]_58[1]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][4]_i_19_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][4]_i_43_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][4]_i_59_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][4]_i_121_n_0.  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][4]_i_121
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][4]_i_121_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.421 | TNS=-14.074 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[10]_10[20].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[10][20]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[10]_10[20]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.421 | TNS=-14.074 |
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[58]_58[11].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[58][11]
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[58]_58[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][12]_i_12_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][12]_i_30_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][12]_i_50_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.420 | TNS=-14.008 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[29]_29[5].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[29][5]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[29]_29[5]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.419 | TNS=-13.942 |
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31]_31[24]_repN.  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31][24]_replica
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31]_31[24]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[24]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][24]_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[0][24]_i_23_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][24]_i_44_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.418 | TNS=-13.887 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31]_31[11].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31][11]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[31]_31[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.416 | TNS=-13.770 |
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[63]_63[21].  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[63][21]
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[63]_63[21]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.415 | TNS=-13.713 |
+INFO: [Physopt 32-662] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[47]_47[0].  Did not re-place instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[47][0]
+INFO: [Physopt 32-702] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2_reg[47]_47[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_23_n_0.  Re-placed instance U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_23
+INFO: [Physopt 32-735] Processed net U_TOP_Hand_Signal/u_hand_signal/zone_count_color2[0][0]_i_23_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.414 | TNS=-13.635 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.414 | TNS=-13.635 |
+Phase 4 Critical Path Optimization | Checksum: e59fcf3d
 
-Time (s): cpu = 00:00:25 ; elapsed = 00:00:13 . Memory (MB): peak = 1833.266 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1833.266 ; gain = 0.000
-INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-0.096 | TNS=-1.728 |
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:13 . Memory (MB): peak = 1803.012 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1803.012 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-0.414 | TNS=-13.635 |
 
 Summary of Physical Synthesis Optimizations
 ============================================
@@ -805,29 +881,29 @@ Summary of Physical Synthesis Optimizations
 |  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 |  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
-|  Critical Path  |          0.312  |          6.254  |            3  |              0  |                    43  |           0  |           2  |  00:00:12  |
-|  Total          |          0.312  |          6.254  |            3  |              0  |                    43  |           0  |           3  |  00:00:12  |
+|  Critical Path  |          0.210  |         31.741  |            3  |              0  |                    69  |           0  |           2  |  00:00:12  |
+|  Total          |          0.210  |         31.741  |            3  |              0  |                    69  |           0  |           3  |  00:00:12  |
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1833.266 ; gain = 0.000
-Ending Physical Synthesis Task | Checksum: e2f1b900
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1803.012 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 12e1e8376
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:13 . Memory (MB): peak = 1833.266 ; gain = 0.000
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:13 . Memory (MB): peak = 1803.012 ; gain = 0.000
 INFO: [Common 17-83] Releasing license: Implementation
-391 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+470 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
 phys_opt_design completed successfully
-phys_opt_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:14 . Memory (MB): peak = 1833.266 ; gain = 0.000
+phys_opt_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:14 . Memory (MB): peak = 1803.012 ; gain = 0.000
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.686 . Memory (MB): peak = 1833.266 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/impl_1/TOP_OV7670_HDMI_physopt.dcp' has been generated.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.677 . Memory (MB): peak = 1803.012 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/impl_1/TOP_OV7670_HDMI_physopt.dcp' has been generated.
 Command: route_design
-Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
-INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
 INFO: [DRC 23-27] Running DRC with 2 threads
 INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
 INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
@@ -839,180 +915,172 @@ INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more in
 
 Starting Routing Task
 INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
-Checksum: PlaceDB: 357c6989 ConstDB: 0 ShapeSum: 9e53ba21 RouteDB: 0
+Checksum: PlaceDB: 2cf133cf ConstDB: 0 ShapeSum: 8d41a520 RouteDB: 0
 
 Phase 1 Build RT Design
-Phase 1 Build RT Design | Checksum: 15eb8aa75
+Phase 1 Build RT Design | Checksum: 7c0818bd
 
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 1940.121 ; gain = 102.770
-Post Restoration Checksum: NetGraph: d981ddd9 NumContArr: 8536cc9c Constraints: 0 Timing: 0
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1830.039 ; gain = 27.027
+Post Restoration Checksum: NetGraph: 5d1c05e8 NumContArr: 1eec12d5 Constraints: 0 Timing: 0
 
 Phase 2 Router Initialization
 
 Phase 2.1 Create Timer
-Phase 2.1 Create Timer | Checksum: 15eb8aa75
+Phase 2.1 Create Timer | Checksum: 7c0818bd
 
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 1940.133 ; gain = 102.781
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1830.059 ; gain = 27.047
 
 Phase 2.2 Fix Topology Constraints
-Phase 2.2 Fix Topology Constraints | Checksum: 15eb8aa75
+Phase 2.2 Fix Topology Constraints | Checksum: 7c0818bd
 
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 1947.340 ; gain = 109.988
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1836.039 ; gain = 33.027
 
 Phase 2.3 Pre Route Cleanup
-Phase 2.3 Pre Route Cleanup | Checksum: 15eb8aa75
+Phase 2.3 Pre Route Cleanup | Checksum: 7c0818bd
 
-Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 1947.340 ; gain = 109.988
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1836.039 ; gain = 33.027
  Number of Nodes with overlaps = 0
 
 Phase 2.4 Update Timing
-Phase 2.4 Update Timing | Checksum: 18bfb9e9c
+Phase 2.4 Update Timing | Checksum: 148f296ee
 
-Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 1974.867 ; gain = 137.516
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.127 | TNS=-2.264 | WHS=-0.144 | THS=-5.232 |
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1848.477 ; gain = 45.465
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.445 | TNS=-11.859| WHS=-0.093 | THS=-3.759 |
 
-Phase 2 Router Initialization | Checksum: 2356de74b
+Phase 2 Router Initialization | Checksum: 18c7fbfc3
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 1979.711 ; gain = 142.359
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 1864.492 ; gain = 61.480
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 0.00113907 %
-  Global Horizontal Routing Utilization  = 0.00126775 %
+  Global Vertical Routing Utilization    = 0.00760135 %
+  Global Horizontal Routing Utilization  = 0.00482537 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
-  Number of Failed Nets               = 8562
+  Number of Failed Nets               = 8555
     (Failed Nets is the sum of unrouted and partially routed nets)
-  Number of Unrouted Nets             = 8544
+  Number of Unrouted Nets             = 8537
   Number of Partially Routed Nets     = 18
-  Number of Node Overlaps             = 8
+  Number of Node Overlaps             = 10
 
 
 Phase 3 Initial Routing
 
 Phase 3.1 Global Routing
-Phase 3.1 Global Routing | Checksum: 2356de74b
+Phase 3.1 Global Routing | Checksum: 18c7fbfc3
 
-Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 1982.383 ; gain = 145.031
-Phase 3 Initial Routing | Checksum: 51949299
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 1864.492 ; gain = 61.480
+Phase 3 Initial Routing | Checksum: 12faca7e1
 
-Time (s): cpu = 00:00:26 ; elapsed = 00:00:20 . Memory (MB): peak = 1986.195 ; gain = 148.844
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1870.824 ; gain = 67.812
 
 Phase 4 Rip-up And Reroute
 
 Phase 4.1 Global Iteration 0
- Number of Nodes with overlaps = 3931
- Number of Nodes with overlaps = 1245
- Number of Nodes with overlaps = 766
- Number of Nodes with overlaps = 444
- Number of Nodes with overlaps = 246
- Number of Nodes with overlaps = 164
- Number of Nodes with overlaps = 56
- Number of Nodes with overlaps = 11
- Number of Nodes with overlaps = 3
- Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.719 | TNS=-34.114| WHS=N/A    | THS=N/A    |
-
-Phase 4.1 Global Iteration 0 | Checksum: 12c734b0d
-
-Time (s): cpu = 00:01:02 ; elapsed = 00:00:49 . Memory (MB): peak = 1987.227 ; gain = 149.875
-
-Phase 4.2 Global Iteration 1
- Number of Nodes with overlaps = 1005
- Number of Nodes with overlaps = 770
- Number of Nodes with overlaps = 366
- Number of Nodes with overlaps = 297
- Number of Nodes with overlaps = 133
- Number of Nodes with overlaps = 58
- Number of Nodes with overlaps = 26
- Number of Nodes with overlaps = 21
- Number of Nodes with overlaps = 10
- Number of Nodes with overlaps = 6
- Number of Nodes with overlaps = 6
- Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.674 | TNS=-16.642| WHS=N/A    | THS=N/A    |
-
-Phase 4.2 Global Iteration 1 | Checksum: 2140f4de3
-
-Time (s): cpu = 00:01:24 ; elapsed = 00:01:03 . Memory (MB): peak = 1987.227 ; gain = 149.875
-
-Phase 4.3 Global Iteration 2
- Number of Nodes with overlaps = 1203
- Number of Nodes with overlaps = 740
- Number of Nodes with overlaps = 605
- Number of Nodes with overlaps = 258
- Number of Nodes with overlaps = 110
- Number of Nodes with overlaps = 64
- Number of Nodes with overlaps = 41
+ Number of Nodes with overlaps = 3860
+ Number of Nodes with overlaps = 1324
+ Number of Nodes with overlaps = 732
+ Number of Nodes with overlaps = 466
+ Number of Nodes with overlaps = 288
+ Number of Nodes with overlaps = 132
+ Number of Nodes with overlaps = 40
  Number of Nodes with overlaps = 16
- Number of Nodes with overlaps = 8
- Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 6
  Number of Nodes with overlaps = 2
  Number of Nodes with overlaps = 0
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.612 | TNS=-18.111| WHS=N/A    | THS=N/A    |
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.262 | TNS=-88.122| WHS=N/A    | THS=N/A    |
 
-Phase 4.3 Global Iteration 2 | Checksum: e7fb5e65
+Phase 4.1 Global Iteration 0 | Checksum: 210f9c9eb
 
-Time (s): cpu = 00:01:49 ; elapsed = 00:01:19 . Memory (MB): peak = 1987.227 ; gain = 149.875
+Time (s): cpu = 00:00:52 ; elapsed = 00:00:39 . Memory (MB): peak = 1871.805 ; gain = 68.793
 
-Phase 4.4 Global Iteration 3
- Number of Nodes with overlaps = 1022
- Number of Nodes with overlaps = 802
- Number of Nodes with overlaps = 535
- Number of Nodes with overlaps = 252
- Number of Nodes with overlaps = 212
-Phase 4.4 Global Iteration 3 | Checksum: 11fe908ff
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 758
+ Number of Nodes with overlaps = 468
+ Number of Nodes with overlaps = 372
+ Number of Nodes with overlaps = 217
+ Number of Nodes with overlaps = 143
+ Number of Nodes with overlaps = 70
+ Number of Nodes with overlaps = 39
+ Number of Nodes with overlaps = 28
+ Number of Nodes with overlaps = 14
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.966 | TNS=-42.429| WHS=N/A    | THS=N/A    |
 
-Time (s): cpu = 00:02:13 ; elapsed = 00:01:33 . Memory (MB): peak = 1987.227 ; gain = 149.875
-Phase 4 Rip-up And Reroute | Checksum: 11fe908ff
+Phase 4.2 Global Iteration 1 | Checksum: 1ac4131ca
 
-Time (s): cpu = 00:02:13 ; elapsed = 00:01:33 . Memory (MB): peak = 1987.227 ; gain = 149.875
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:53 . Memory (MB): peak = 1874.309 ; gain = 71.297
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 899
+ Number of Nodes with overlaps = 599
+ Number of Nodes with overlaps = 350
+ Number of Nodes with overlaps = 200
+ Number of Nodes with overlaps = 99
+ Number of Nodes with overlaps = 55
+ Number of Nodes with overlaps = 23
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.957 | TNS=-38.582| WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 18980006a
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:01:06 . Memory (MB): peak = 1874.309 ; gain = 71.297
+Phase 4 Rip-up And Reroute | Checksum: 18980006a
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:01:06 . Memory (MB): peak = 1874.309 ; gain = 71.297
 
 Phase 5 Delay and Skew Optimization
 
 Phase 5.1 Delay CleanUp
 
 Phase 5.1.1 Update Timing
-Phase 5.1.1 Update Timing | Checksum: 1b7a50bdc
+Phase 5.1.1 Update Timing | Checksum: 1301843dd
 
-Time (s): cpu = 00:02:14 ; elapsed = 00:01:34 . Memory (MB): peak = 1987.227 ; gain = 149.875
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.497 | TNS=-12.755| WHS=N/A    | THS=N/A    |
+Time (s): cpu = 00:01:34 ; elapsed = 00:01:07 . Memory (MB): peak = 1874.309 ; gain = 71.297
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.939 | TNS=-33.972| WHS=N/A    | THS=N/A    |
 
  Number of Nodes with overlaps = 0
-Phase 5.1 Delay CleanUp | Checksum: 49ae73d7
+Phase 5.1 Delay CleanUp | Checksum: 13e41e035
 
-Time (s): cpu = 00:02:14 ; elapsed = 00:01:34 . Memory (MB): peak = 1987.227 ; gain = 149.875
+Time (s): cpu = 00:01:34 ; elapsed = 00:01:07 . Memory (MB): peak = 1874.309 ; gain = 71.297
 
 Phase 5.2 Clock Skew Optimization
-Phase 5.2 Clock Skew Optimization | Checksum: 49ae73d7
+Phase 5.2 Clock Skew Optimization | Checksum: 13e41e035
 
-Time (s): cpu = 00:02:14 ; elapsed = 00:01:34 . Memory (MB): peak = 1987.227 ; gain = 149.875
-Phase 5 Delay and Skew Optimization | Checksum: 49ae73d7
+Time (s): cpu = 00:01:34 ; elapsed = 00:01:07 . Memory (MB): peak = 1874.309 ; gain = 71.297
+Phase 5 Delay and Skew Optimization | Checksum: 13e41e035
 
-Time (s): cpu = 00:02:14 ; elapsed = 00:01:34 . Memory (MB): peak = 1987.227 ; gain = 149.875
+Time (s): cpu = 00:01:34 ; elapsed = 00:01:07 . Memory (MB): peak = 1874.309 ; gain = 71.297
 
 Phase 6 Post Hold Fix
 
 Phase 6.1 Hold Fix Iter
 
 Phase 6.1.1 Update Timing
-Phase 6.1.1 Update Timing | Checksum: ffdbd820
+Phase 6.1.1 Update Timing | Checksum: ad1ffc1f
 
-Time (s): cpu = 00:02:15 ; elapsed = 00:01:34 . Memory (MB): peak = 1987.227 ; gain = 149.875
-INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.497 | TNS=-12.646| WHS=0.101  | THS=0.000  |
+Time (s): cpu = 00:01:35 ; elapsed = 00:01:07 . Memory (MB): peak = 1874.309 ; gain = 71.297
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.934 | TNS=-33.446| WHS=0.168  | THS=0.000  |
 
-Phase 6.1 Hold Fix Iter | Checksum: ffdbd820
+Phase 6.1 Hold Fix Iter | Checksum: ad1ffc1f
 
-Time (s): cpu = 00:02:15 ; elapsed = 00:01:34 . Memory (MB): peak = 1987.227 ; gain = 149.875
-Phase 6 Post Hold Fix | Checksum: ffdbd820
+Time (s): cpu = 00:01:35 ; elapsed = 00:01:07 . Memory (MB): peak = 1874.309 ; gain = 71.297
+Phase 6 Post Hold Fix | Checksum: ad1ffc1f
 
-Time (s): cpu = 00:02:15 ; elapsed = 00:01:34 . Memory (MB): peak = 1987.227 ; gain = 149.875
+Time (s): cpu = 00:01:35 ; elapsed = 00:01:08 . Memory (MB): peak = 1874.309 ; gain = 71.297
 
 Phase 7 Route finalize
 
 Router Utilization Summary
-  Global Vertical Routing Utilization    = 3.62369 %
-  Global Horizontal Routing Utilization  = 4.50997 %
+  Global Vertical Routing Utilization    = 9.35473 %
+  Global Horizontal Routing Utilization  = 12.1611 %
   Routable Net Status*
   *Does not include unroutable nets such as driverless and loadless.
   Run report_route_status for detailed report.
@@ -1023,10 +1091,11 @@ Router Utilization Summary
   Number of Node Overlaps             = 0
 
 Congestion Report
-North Dir 1x1 Area, Max Cong = 72.0721%, No Congested Regions.
-South Dir 1x1 Area, Max Cong = 81.0811%, No Congested Regions.
-East Dir 1x1 Area, Max Cong = 72.0588%, No Congested Regions.
-West Dir 1x1 Area, Max Cong = 80.8824%, No Congested Regions.
+North Dir 1x1 Area, Max Cong = 70.2703%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 71.1712%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 75%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 85.2941%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_R_X17Y51 -> INT_R_X17Y51
 
 ------------------------------
 Reporting congestion hotspots
@@ -1046,59 +1115,59 @@ Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
 Direction: West
 ----------------
 Congested clusters found at Level 0
-Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 1
 
-Phase 7 Route finalize | Checksum: da39f581
+Phase 7 Route finalize | Checksum: 64758fe8
 
-Time (s): cpu = 00:02:15 ; elapsed = 00:01:34 . Memory (MB): peak = 1987.227 ; gain = 149.875
+Time (s): cpu = 00:01:35 ; elapsed = 00:01:08 . Memory (MB): peak = 1874.309 ; gain = 71.297
 
 Phase 8 Verifying routed nets
 
  Verification completed successfully
-Phase 8 Verifying routed nets | Checksum: da39f581
+Phase 8 Verifying routed nets | Checksum: 64758fe8
 
-Time (s): cpu = 00:02:15 ; elapsed = 00:01:34 . Memory (MB): peak = 1987.227 ; gain = 149.875
+Time (s): cpu = 00:01:35 ; elapsed = 00:01:08 . Memory (MB): peak = 1874.309 ; gain = 71.297
 
 Phase 9 Depositing Routes
-Phase 9 Depositing Routes | Checksum: 154950c85
+Phase 9 Depositing Routes | Checksum: 87a82bb3
 
-Time (s): cpu = 00:02:15 ; elapsed = 00:01:35 . Memory (MB): peak = 1987.227 ; gain = 149.875
+Time (s): cpu = 00:01:35 ; elapsed = 00:01:08 . Memory (MB): peak = 1874.309 ; gain = 71.297
 
 Phase 10 Post Router Timing
-INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.497 | TNS=-12.646| WHS=0.101  | THS=0.000  |
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.934 | TNS=-33.446| WHS=0.168  | THS=0.000  |
 
 WARNING: [Route 35-328] Router estimated timing not met.
 Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
-Phase 10 Post Router Timing | Checksum: 154950c85
+Phase 10 Post Router Timing | Checksum: 87a82bb3
 
-Time (s): cpu = 00:02:15 ; elapsed = 00:01:35 . Memory (MB): peak = 1987.227 ; gain = 149.875
+Time (s): cpu = 00:01:35 ; elapsed = 00:01:08 . Memory (MB): peak = 1874.309 ; gain = 71.297
 INFO: [Route 35-16] Router Completed Successfully
 
-Time (s): cpu = 00:02:15 ; elapsed = 00:01:35 . Memory (MB): peak = 1987.227 ; gain = 149.875
+Time (s): cpu = 00:01:35 ; elapsed = 00:01:08 . Memory (MB): peak = 1874.309 ; gain = 71.297
 
 Routing Is Done.
 INFO: [Common 17-83] Releasing license: Implementation
-410 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
+489 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
 route_design completed successfully
-route_design: Time (s): cpu = 00:02:18 ; elapsed = 00:01:37 . Memory (MB): peak = 1987.227 ; gain = 153.961
+route_design: Time (s): cpu = 00:01:38 ; elapsed = 00:01:10 . Memory (MB): peak = 1874.309 ; gain = 71.297
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.921 . Memory (MB): peak = 1989.277 ; gain = 2.051
-INFO: [Common 17-1381] The checkpoint 'C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/impl_1/TOP_OV7670_HDMI_routed.dcp' has been generated.
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.935 . Memory (MB): peak = 1874.309 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/impl_1/TOP_OV7670_HDMI_routed.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_drc -file TOP_OV7670_HDMI_drc_routed.rpt -pb TOP_OV7670_HDMI_drc_routed.pb -rpx TOP_OV7670_HDMI_drc_routed.rpx
 Command: report_drc -file TOP_OV7670_HDMI_drc_routed.rpt -pb TOP_OV7670_HDMI_drc_routed.pb -rpx TOP_OV7670_HDMI_drc_routed.rpx
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 2 threads
-INFO: [Coretcl 2-168] The results of DRC are in file C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/impl_1/TOP_OV7670_HDMI_drc_routed.rpt.
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/impl_1/TOP_OV7670_HDMI_drc_routed.rpt.
 report_drc completed successfully
 INFO: [runtcl-4] Executing : report_methodology -file TOP_OV7670_HDMI_methodology_drc_routed.rpt -pb TOP_OV7670_HDMI_methodology_drc_routed.pb -rpx TOP_OV7670_HDMI_methodology_drc_routed.rpx
 Command: report_methodology -file TOP_OV7670_HDMI_methodology_drc_routed.rpt -pb TOP_OV7670_HDMI_methodology_drc_routed.pb -rpx TOP_OV7670_HDMI_methodology_drc_routed.rpx
 INFO: [Timing 38-35] Done setting XDC timing constraints.
 INFO: [DRC 23-133] Running Methodology with 2 threads
-INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/impl_1/TOP_OV7670_HDMI_methodology_drc_routed.rpt.
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/impl_1/TOP_OV7670_HDMI_methodology_drc_routed.rpt.
 report_methodology completed successfully
 INFO: [runtcl-4] Executing : report_power -file TOP_OV7670_HDMI_power_routed.rpt -pb TOP_OV7670_HDMI_power_summary_routed.pb -rpx TOP_OV7670_HDMI_power_routed.rpx
 Command: report_power -file TOP_OV7670_HDMI_power_routed.rpt -pb TOP_OV7670_HDMI_power_summary_routed.pb -rpx TOP_OV7670_HDMI_power_routed.rpx
@@ -1106,7 +1175,7 @@ INFO: [Timing 38-35] Done setting XDC timing constraints.
 Running Vector-less Activity Propagation...
 
 Finished Running Vector-less Activity Propagation
-422 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
+501 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
 report_power completed successfully
 INFO: [runtcl-4] Executing : report_route_status -file TOP_OV7670_HDMI_route_status.rpt -pb TOP_OV7670_HDMI_route_status.pb
 INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file TOP_OV7670_HDMI_timing_summary_routed.rpt -pb TOP_OV7670_HDMI_timing_summary_routed.pb -rpx TOP_OV7670_HDMI_timing_summary_routed.rpx -warn_on_violation 
@@ -1120,8 +1189,8 @@ INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file TOP_OV7670
 INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
 INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
 Command: write_bitstream -force TOP_OV7670_HDMI.bit
-Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
-INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
 Running DRC as a precondition to command write_bitstream
 INFO: [IP_Flow 19-1839] IP Catalog is up to date.
 INFO: [DRC 23-27] Running DRC with 2 threads
@@ -1133,10 +1202,10 @@ WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_disp/U_Frame
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[14] (net: u_disp/U_Frame_Buffer/mem_reg_1_3_1[14]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/h_counter_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[14] (net: u_disp/U_Frame_Buffer/mem_reg_1_3_1[14]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/h_counter_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[14] (net: u_disp/U_Frame_Buffer/mem_reg_1_3_1[14]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/v_counter_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[14] (net: u_disp/U_Frame_Buffer/mem_reg_1_3_1[14]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/v_counter_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[14] (net: u_disp/U_Frame_Buffer/mem_reg_1_3_1[14]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/v_counter_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[14] (net: u_disp/U_Frame_Buffer/mem_reg_1_3_1[14]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/v_counter_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[14] (net: u_disp/U_Frame_Buffer/mem_reg_1_3_1[14]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/v_counter_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[14] (net: u_disp/U_Frame_Buffer/mem_reg_1_3_1[14]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/v_counter_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[14] (net: u_disp/U_Frame_Buffer/mem_reg_1_3_1[14]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/v_counter_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[14] (net: u_disp/U_Frame_Buffer/mem_reg_1_3_1[14]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/v_counter_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[15] (net: u_disp/U_Frame_Buffer/ADDRBWRADDR[15]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/h_counter_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[15] (net: u_disp/U_Frame_Buffer/ADDRBWRADDR[15]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/h_counter_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 u_disp/U_Frame_Buffer/mem_reg_0_0 has an input control pin u_disp/U_Frame_Buffer/mem_reg_0_0/ADDRBWRADDR[15] (net: u_disp/U_Frame_Buffer/ADDRBWRADDR[15]) which is driven by a register (u_disp/U_VGAController/U_Pix_counter/h_counter_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
@@ -1165,5 +1234,5 @@ INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK 
 INFO: [Common 17-83] Releasing license: Implementation
 12 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 2508.992 ; gain = 492.406
-INFO: [Common 17-206] Exiting Vivado at Wed Jul 23 17:03:39 2025...
+write_bitstream: Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 2378.344 ; gain = 471.961
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 29 11:41:25 2025...

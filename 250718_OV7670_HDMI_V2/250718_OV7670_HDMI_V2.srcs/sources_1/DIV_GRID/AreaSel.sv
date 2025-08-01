@@ -1,6 +1,6 @@
 module AreaSel #(
-    parameter  IMG_WIDTH  = 1920,  // 화면 폭
-    parameter  IMG_HEIGHT = 1080,  // 화면 높이
+    parameter  IMG_WIDTH  = 320,  // 화면 폭
+    parameter  IMG_HEIGHT = 240,  // 화면 높이
     parameter  NX         = 10,   // 칸 수 가로
     parameter  NY         = 8    // 칸 수 세로
 ) (

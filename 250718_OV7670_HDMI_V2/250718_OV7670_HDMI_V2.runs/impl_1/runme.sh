@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/working/FPAG_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/impl_1'
+HD_PWD='C:/Zybo_Harman/250718_OV7670_HDMI_V2/250718_OV7670_HDMI_V2.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
